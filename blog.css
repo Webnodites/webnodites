@@ -101,8 +101,46 @@ a{
 .content .side-bar{
   width: 30%;
   float: right;
-  border:1px dashed green;
+  font-size: 1.2em;
   height: 300px;
+}
+.content .side-bar .section{
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-top:1px solid #e0e0e0e;
+
+}
+.content .side-bar .section.topics ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.content .side-bar .section.topics ul a{
+  display: block;
+  padding: 15px 0px 15px 0px;
+  border-bottom:1px solid #e0e0e0e;
+  transition: all 0.3s;
+}
+.content .side-bar .section.topics ul a:hover{
+  padding-left: 20px;
+  transition:all 0.3s;
+
+}
+.content .side-bar .section.search{
+  margin-top:80px; 
+}
+.text-input{
+  padding: .7rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border:1px solid #e0e0e0e ;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+  font-family: 'lora' ,serif;
 }
 .post-slider .next{
   position: absolute;
