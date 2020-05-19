@@ -58,12 +58,13 @@ header nav ul li a
 	display: block;
 	padding: 0 20px;
 	text-decoration: none; 
+	font-size: 17px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header nav ul li a:hover
 {
 	color:blue;
-  background: ;
-  text-decoration: none; 
+	text-decoration: none; 
 }
 .menu-toggle
 {
