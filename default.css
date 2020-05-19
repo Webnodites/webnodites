@@ -22,9 +22,9 @@
 	  top: 0;
 	  left: 0;
 	  padding: 0 100px;
-	  background: black;
 	  width:100%;
-	  box-sizing: border-box;
+    box-sizing: border-box;
+    
   }
   header .logo
   {
@@ -63,12 +63,15 @@
   }
   header nav ul li a:hover
   {
-	  color:blue;
-	  text-decoration: none; 
+    color:whitesmoke;
+    background-color: #00e6e6;
+    text-decoration: none;
+    border-top-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
   }
   .menu-toggle
   {
-	color: white;
+	color: #00e6e6;
 	float: right;
 	line-height: 50px;
 	font-size: 24px;
