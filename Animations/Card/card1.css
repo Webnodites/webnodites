@@ -1,0 +1,118 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url(c.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+}
+.card-table{
+	margin: auto;
+	max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-top: 200px; 
+} 
+.col img{
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+
+	border:1px solid red;
+
+}
+.card h2{
+	font-size: 20px;
+}
+.card p{
+	font-size: 20px;
+	margin: 30px;
+	text-align: center;
+	
+	border:1px solid green;
+	width: 250px; 
+}
+.col{
+	flex: 35%;
+	margin: 20px;
+	
+	max-width: 320px;
+	height: 600px;
+
+	background: white;
+  
+	box-sizing: border-box;
+}
+.c1 .card{
+	width: 250px;
+	background: white;
+
+}
+.c1 .card p{
+	font-size: 12px;
+	margin: 0px;
+}
+.table{
+	background: blue;
+	height: 450px;
+	padding: 30px 40px;
+	font-family: "montserrat",sans-serif;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px #00000070;
+}
+.table{
+	text-transform: uppercase;
+}
+.table ul{
+	margin: 0px;
+	padding: 0px;
+
+}
+.table ul li{
+	padding: 10px 0px;
+	list-style: none;
+
+}
+.card{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.card span{
+	display: block;
+	font-size: 14px;
+}
+.c1 a{
+	text-decoration: none;
+	color: #2c3e50;
+	border: 2px solid #2c3e50;
+	display: block;
+
+	padding: 10px 0px;
+	margin:10px 0px;
+	border-radius: 40px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: 0.5s linear; 
+}
+.c1 .col .table:hover{
+	background:black;
+}
+.c1 a:hover{
+	background:#2c3e50;
+	color: #fff;
+
+}
+@media screen and (max-width: 980px){
+	.col{
+		flex: 50%;
+	}
+}
+@media screen and (max-width: 700px){
+	.col{
+		flex: 100%;
+	}
+}
