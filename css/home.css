@@ -3,6 +3,13 @@
   min-height:100vh ;
   
 }
+
+#topology {
+  width: 100%;
+  height: 100vh;
+}
+
+
 #About{
   background-color: green;
   min-height:70vh;
@@ -81,14 +88,14 @@
   header nav ul li a:hover
   {
     color:whitesmoke;
-    background-color: #00e6e6;
+    background-color: #1309d9;
     text-decoration: none;
     border-top-left-radius: 15px; 
     border-bottom-right-radius: 15px;
   }
   .menu-toggle
   {
-	color: #00e6e6;
+	color: #1309d9;
 	float: right;
 	line-height: 50px;
 	font-size: 24px;
@@ -360,7 +367,7 @@ h4{
   padding-bottom: 10px;
 }
 
-
+/* STICKY PAGE*/
 #top{
   margin-bottom: 100vh;
 }
