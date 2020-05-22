@@ -136,7 +136,7 @@
 	border-radius:5px;
 	border:none;
 	height:50px;
-	width:200px;
+	width:75%;
 	margin-top: 100px;
 	}
 .portfoliobox:hover .feature
@@ -162,6 +162,18 @@
     font-size: 50px;
     box-shadow: 3px 3px 5px #013366;
     transition: all 1.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+@media only screen and (max-width: 767px)
+{
+    .portdis{
+        width: 100%;
+        padding: 4px 4px;
+    }
+    .feature input{
+        width: 90%;
+        font-size: small;
+        height: 40px;
+    }
 }
 
 
