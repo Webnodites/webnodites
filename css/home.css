@@ -359,3 +359,24 @@ h4{
   text-align: center;
   padding-bottom: 10px;
 }
+
+
+#top{
+  margin-bottom: 100vh;
+}
+#contact{
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+} 
+@media (max-width: 768px)   
+{
+
+#top{
+  margin-bottom: 0px;
+}
+#contact{
+  position: relative;
+} 
+}
