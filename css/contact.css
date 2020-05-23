@@ -1,0 +1,332 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#Home{
+	background-color: black;
+	min-height: 8vh;
+  }
+  
+  /*NAVBAR*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width:100%;
+  box-sizing: border-box;
+  
+}
+header .logo
+{
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+header nav
+{
+    float: right;
+}
+header nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li
+{
+    list-style: none;
+    text-decoration: none; 
+}
+header nav ul li a
+{
+    height: 50px;
+    line-height:50px;
+    color: white;
+    display: block;
+    padding: 0 20px;
+    text-decoration: none; 
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav ul li a:hover
+{
+  color:whitesmoke;
+  background-color: #00e6e6;
+  text-decoration: none;
+  border-top-left-radius: 15px; 
+  border-bottom-right-radius: 15px;
+}
+.menu-toggle
+{
+  color: #00e6e6;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 991px)
+{
+     header
+     {
+     padding: 0 20px;
+    }
+    .menu-toggle
+    {
+    display: block;
+    }
+     header nav
+      {
+     position:absolute;
+     left:-100%;
+     width: 100%;
+     height: calc(100vh-50px);
+     background: black;
+     top: 50px;
+     transition: 0.5s;
+      }
+
+      header nav ul{
+    display: block;
+    text-align: center;
+      }
+
+      header nav.active
+      {
+     left: 0;
+      }
+}
+
+  /*CONTACT*/
+.page {
+    overflow: hidden;
+}
+.port-banner {
+    /*background-image: url(../img/portilio-banner.jpg);*/
+    background-color: black;
+    background-position: 50% 15px;
+    padding-bottom: 100px;
+}
+.page-section{
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 80px;
+
+}
+.contactpage {
+    background-image: url(http://misterjl.com/wp-content/uploads/2017/04/personal-bg-1024x576.png);
+    background-repeat: repeat;
+    position: relative;
+    height: 700px;
+}
+.allpagetitle {
+    margin-top: 0;
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 70px;
+    opacity: .9;
+}
+.contact-us-card {
+    background-color: #fff;
+    padding: 15px;
+}
+.contact-us-card .contact-left {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 30px;
+    background: #3d94f2;
+    color: #FFFFFF;
+    top: 60px;
+    width:350px;
+    height: 420px;
+    z-index: 1;
+    margin-left: 100px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+.contact-left h2 {
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+ul, li {
+    list-style: none;
+}
+.contact-left .list li {
+    margin-bottom: 10px;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+}
+.contact-left .list li i {
+    margin-right: 15px;
+    width: 16px;
+    text-align: center;
+}
+.contact-left .list li a {
+    color: #fff !important;
+}
+.contact-left .contact-left-socials h2 {
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+ .contact-left .contact-left-socials .social-links {
+    margin: 10px 0 0;
+}
+.contact-left .social-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+ .contact-left .social-links li a {
+    color: #3d94f2;
+    background: #FFFFFF;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+}
+.contact-right {
+    position: absolute;
+    background-color: white;
+    margin-left: 250px;
+    padding: 60px 50px;
+    width: 50%;
+    padding-left: 300px;
+    height: 80%;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.5); 
+}
+.contact-right h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: -40px;
+    margin-bottom: 25px;
+}
+
+.formbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    height: cover;
+
+}
+.inputbox{
+    position: relative;
+    margin:0 0 30px 0;
+    width: 100%; 
+}
+.inputbox input,.inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    border:none;
+    border-bottom: 1px solid grey;
+    outline: none; 
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #3d94f2;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.inputbox input:focus ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox input:valid ~ span,
+.inputbox textarea:valid ~ span
+{
+    transform: translateY(-30px);
+    font-size: 14px;
+    font-weight: 400px;
+    letter-spacing: 1px;
+    color: #3d94f2;
+}
+.inputbox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #3d94f2;
+    color: white;
+    border:none;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+}
+.direction-banner{
+    background-color: rgba(0,0,0,0.7);
+    height: 200px;
+    text-align: center;
+
+}
+.direction-banner h2{
+     padding:50px 0;
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 70px;
+    vertical-align: center;
+}
+.map{
+    min-height: auto;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .contactpage{
+        height: 1000px;
+    }
+    .contact-us-card .contact-left{
+        width: 96%;
+        margin-top: 600px;
+        margin-left: 0px;
+        top: 0;
+    }
+    .contact-right{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 70px 20px;
+    }
+    .contact-left-socials
+    {
+        margin-left: 80px;
+    }
+   
+}
