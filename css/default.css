@@ -78,7 +78,7 @@
   {
 	   header
 	   {
-	   padding: 0 20px;
+	   
 	  }
 	  .menu-toggle
 	  {
@@ -257,7 +257,7 @@ ul{
 .sidebar-contact {
    position: fixed;
    transform: translateY(-50%);
-   top: 50%;
+   top: 71%;
    right: -350px;
    width: 350px;
    height: auto;
