@@ -1,0 +1,79 @@
+.work-area{
+	height: 100vh;
+}
+.work-head h2{
+	  text-align: center;
+    font-weight: 700;
+    color: #023575;
+    /*font-family: Open Sans;*/
+    font-size: 40px;
+    line-height: 50px;
+}
+.carousel {
+    position: relative;
+    height: 100%;
+}
+.carousel-inner,.carousel-inner .item {
+	height: 100%;
+}
+.item .main{
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.left-side {
+    left: 3%;
+    padding: 20px 60px;
+    top: 15%;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+ .left-side p{ 
+   font-size: 18px;
+   padding: 20px 0px;
+   }
+.left-side a{ 
+   color: white;
+   background-color: #023575;
+ }   
+ .left-side a:hover{ 
+   color: white;
+   background-color: blue;
+ }
+ .right-side{
+  left: 3%;
+    padding: 20px 0px;
+    top: 20%;
+    color: #fff;
+ }
+ .right-side .pcview{
+ 	height: 400px;
+ 	width: 80%;
+ 	border-radius: 20px;
+ }
+  .right-side .mbview{
+  	position: absolute;
+ 	height: 60%;
+ 	width: 25%;
+ 	border-radius: 20px;
+ 	top: 45%;
+ 	left: 60%;
+ }
+ .carousel-control {
+ 	width: 10%;
+ }
+ .carousel-control .glyphicon-chevron-left{
+    left: 25%;
+}
+.carousel-control .glyphicon-chevron-right {
+    right: 25%;
+}
+
+@media only screen and (max-width: 990px) {
+	.right-side{
+		top: 30%;
+		left: 10%;
+	}
+}
