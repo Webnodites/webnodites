@@ -10,11 +10,7 @@
 }
 
 
-#About{
-  background-color: green;
-  min-height:70vh;
-  padding-top: 100;
-}
+
 #planning{
   background-color: #1A1D21;
   min-height:100vh;
@@ -145,7 +141,52 @@
 		}
   }
   
-  
+  /*About Section*/
+.about-area {
+    background-color: #fcfcfc;
+    position: relative;
+    padding: 70px 0;
+}
+.about-area .rowarea{
+    padding: 30px 15px;
+}
+.about-area h2{
+    text-align: center;
+    font-weight: 700;
+    color: #023575;
+    /*font-family: Open Sans;*/
+    font-size: 40px;
+    line-height: 50px;
+}
+.about-area img {
+    display: block;
+    height: 80%;
+    width: 100%;
+    margin-top: 50px;
+}
+.about-area .text{
+  margin: 50px 0px;
+}
+.about-area p {
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 19px;
+    text-align: left;
+    color: #676767;
+}
+.about-area a{
+    background-color:#023575 ;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+}
+.about-area a:hover{
+    color: white;
+}
+
+
+  /*end about section*/
    
   /* CONTACT SECTION */
   .small-section{
