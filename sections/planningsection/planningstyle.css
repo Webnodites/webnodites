@@ -1,6 +1,7 @@
 .planning-area {
     background-color: #fcfcfc;
     position: relative;
+    height: 100vh;
 }
 .planning-area .heading{
 	height: 80px;
@@ -30,6 +31,7 @@
 }
 .icon1{
 	margin-left: 110px;
+    padding-top: 70px;
 }
 .icon2{
 	margin-right: 70px;
@@ -80,8 +82,28 @@
 
 @media only screen and (max-width: 767px)
 {
-	.icon1,.icon2{
-	height: 500px;
+.icon1{
+    margin-left: 0px;
+    padding-top: 70px;
+    height: 200px;
+}
+.icon2{
+    margin-right: 0px;
+    height: 200px;
+}
+.icon1 img, .icon2 img{
+    height: 50px;
+    width: 50px;
+}
+.icon1 h3, .icon2 h3{
+    color: #023575;
+    font-size: 15px;
+}
+.colchange h3,.colchange img{
+    margin-left: 0px;
+}
+.colchange2 h3,.colchange2 img{
+    margin-right: 0px;
 }
 .fadeintop {
     opacity: 0;
@@ -93,4 +115,11 @@
     transform: translateY(50px);
     transition: all 2s;
 }
+}
+@media only screen and (max-width: 500px)
+{
+  .icon1{
+    margin-left: 15px;
+  
+}  
 }
