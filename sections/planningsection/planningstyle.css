@@ -1,4 +1,9 @@
-
+.about{
+    height: 100vh;
+}
+.contact{
+    height: 100vh;
+}
 .planning-area .heading h2{
 	 text-align: center;
     font-weight: 700;
@@ -13,20 +18,18 @@
 	transition: all 2s;
 }
 .line img{
-	height:100%;
-	width: 90%;
-    margin-left: 45px;
+	width: 98%;
 }
 .icon1,.icon2{
 	height: 270px;
 	text-align: center;
 }
 .icon1{
-	margin-left: 110px;
-    padding-top: 70px;
+    padding-left: 65px;
+   padding-top: 70px;
 }
 .icon2{
-	margin-right: 100px;
+	 padding-right: 90px;
 }
 .icon1 h3, .icon2 h3{
 	color: #023575;
@@ -42,11 +45,12 @@
  font-size: 17px; 
 }
 
-.colchange h3,.colchange img{
-	margin-left: 45px;
+.colchange {
+ left: 20px;
 }
-.colchange2 h3,.colchange2 img{
-	margin-right: 60px;
+.colchange2 {
+ text-align: left;
+  left: 20px;
 }
 
 
