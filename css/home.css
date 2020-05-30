@@ -143,9 +143,9 @@
   
   /*About Section*/
 .about-area {
-    background-color: #fcfcfc;
+    background-color: #181818;
     position: relative;
-    padding: 70px 0;
+    padding: 0px 0;
 }
 .about-area .rowarea{
     padding: 30px 15px;
@@ -173,7 +173,7 @@
     line-height: 25px;
     font-size: 19px;
     text-align: left;
-    color: #676767;
+    color: whitesmoke;
 }
 .about-area a{
     background-color:#023575 ;
