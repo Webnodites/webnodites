@@ -1,11 +1,4 @@
-.planning-area {
-    background-color: #fcfcfc;
-    position: relative;
-    height: 100vh;
-}
-.planning-area .heading{
-	height: 80px;
-}
+
 .planning-area .heading h2{
 	 text-align: center;
     font-weight: 700;
@@ -15,15 +8,14 @@
     line-height: 50px;
 }
 .line{
-	height: 125px;
-	margin-top: -15px;
+	margin-top: -50px;
 	opacity: 0;
 	transition: all 2s;
 }
 .line img{
 	height:100%;
-	width: 100%;
-
+	width: 90%;
+    margin-left: 45px;
 }
 .icon1,.icon2{
 	height: 270px;
@@ -34,7 +26,7 @@
     padding-top: 70px;
 }
 .icon2{
-	margin-right: 70px;
+	margin-right: 100px;
 }
 .icon1 h3, .icon2 h3{
 	color: #023575;
@@ -123,3 +115,18 @@
   
 }  
 }
+
+@media only screen and (max-width: 920px)
+{
+  .icon1
+{
+    margin-left: 15px;
+}
+.line img{
+	height:100%;
+	width: 100%;
+    margin-left: 7px;
+}
+
+}
+
