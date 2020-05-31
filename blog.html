@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css">
   <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="blog.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -57,7 +57,7 @@
       <h1 class="slider-title">Trending Post</h1>
       <div class="post-wrapper">
         <div class="post">
-          <img src="pic3.jpg" class="slider-image">
+          <img src="Images/blog/pic3.jpg" class="slider-image">
           <div class="post-info">
             <h4>
               <a href="s.html">lorem ipsum</a>
@@ -68,7 +68,7 @@
           </div>
         </div>
          
-        <div class="post"><img src="pic4.jpg" class="slider-image">
+        <div class="post"><img src="Images/blog/pic4.jpg" class="slider-image">
           <div class="post-info">
             <h4>
               <a href="s.html">lorem ipsum</a>
@@ -79,7 +79,7 @@
           </div>
         </div>
           
-        <div class="post"><img src="pic3.jpg" class="slider-image">
+        <div class="post"><img src="Images/blog/pic3.jpg" class="slider-image">
           <div class="post-info">
             <h4>
               <a href="s.html">lorem ipsum</a>
@@ -90,7 +90,7 @@
           </div>
         </div>
         
-        <div class="post"><img src="pic4.jpg" class="slider-image">
+        <div class="post"><img src="Images/blog/pic4.jpg" class="slider-image">
           <div class="post-info">
             <h4>
               <a href="s.html">lorem ipsum</a>
@@ -107,9 +107,9 @@
       <div class="main-content">
         <h1 class="recent-post-title">Recent post</h1>
         <div class="post">
-          <img src="pic4.jpg" class="post-image">
+          <img src="Images/blog/pic4.jpg" class="post-image">
           <div class="post-preview">
-            <h1><a href="single.html">Artificial Technology</a></h1>
+            <h1><a href="singleblog.html">Artificial Technology</a></h1>
             <i class="fa fa-user">lorem ipsum</i>
                 &nbsp;
             <i class="fa fa-calendar">may 18,2020</i>
@@ -118,14 +118,14 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 
             </p>
-            <a href="single.html" class="btn read-more">more</a>
+            <a href="singleblog.html" class="btn read-more">more</a>
           </div>
         </div>
          
         <div class="post">
-          <img src="pic4.jpg" class="post-image">
+          <img src="Images/blog/pic4.jpg" class="post-image">
           <div class="post-preview">
-            <h1><a href="single.html">Artificial Technology</a></h1>
+            <h1><a href="singleblog.html">Artificial Technology</a></h1>
             <i class="fa fa-user">lorem ipsum</i>
                 &nbsp;
             <i class="fa fa-calendar">may 18,2020</i>
@@ -134,7 +134,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 
             </p>
-            <a href="single.html" class="btn read-more">more</a>
+            <a href="singleblog.html" class="btn read-more">more</a>
           </div>
         </div>
         
@@ -288,6 +288,20 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
+
+        $('.toggle').click(function(){
+          $('.sidebar-contact').toggleClass('active')
+          $('.toggle').toggleClass('active')
+
+        })
+
+
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('active')
+          
+
+        })
+
       
       $('.post-wrapper').slick({
   slidesToShow: 3,
