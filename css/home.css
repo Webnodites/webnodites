@@ -12,11 +12,11 @@
 
 
 #planning{
-  background-color: #1A1D21;
-  min-height:100vh;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  background-color: #fcfcfc;
+  min-height:50vh;
 }
+
+
 #template{
   background-color: brown;
   min-height:100vh ;
@@ -143,9 +143,9 @@
   
   /*About Section*/
 .about-area {
-    background-color: #fcfcfc;
+    background-color: #181818;
     position: relative;
-    padding: 70px 0;
+    padding: 0px 0;
 }
 .about-area .rowarea{
     padding: 30px 15px;
@@ -173,7 +173,7 @@
     line-height: 25px;
     font-size: 19px;
     text-align: left;
-    color: #676767;
+    color: whitesmoke;
 }
 .about-area a{
     background-color:#023575 ;
@@ -438,3 +438,136 @@ h4{
   position: relative;
 } 
 }
+
+/* PLANNING */
+
+.planning-area .heading h2{
+   text-align: center;
+    font-weight: 700;
+    color: #023575;
+    /*font-family: Open Sans;*/
+    font-size: 40px;
+    line-height: 50px;
+}
+.line{
+  margin-top: -50px;
+  opacity: 0;
+  transition: all 2s;
+}
+.line img{
+  width: 98%;
+}
+.icon1,.icon2{
+  height: 270px;
+  text-align: center;
+}
+.icon1{
+    padding-left: 65px;
+   padding-top: 70px;
+}
+.icon2{
+   padding-right: 90px;
+}
+.icon1 h3, .icon2 h3{
+  color: #023575;
+}
+
+.icon1 img, .icon2 img{
+  height: 100px;
+  width: 100px;
+}
+
+.icon1 p,.icon2 p{
+ padding: 5px;
+ font-size: 17px; 
+}
+
+.colchange {
+ left: 20px;
+}
+.colchange2 {
+ text-align: left;
+  left: 20px;
+}
+
+
+.fadeintop {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: all 2s;
+}
+.fadeinbottom {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s;
+}
+.fadeintop.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fadeinbottom.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.line.visible{
+    opacity: 1;
+    }
+
+@media only screen and (max-width: 767px)
+{
+.icon1{
+    margin-left: 0px;
+    padding-top: 70px;
+    height: 200px;
+}
+.icon2{
+    margin-right: 0px;
+    height: 200px;
+}
+.icon1 img, .icon2 img{
+    height: 50px;
+    width: 50px;
+}
+.icon1 h3, .icon2 h3{
+    color: #023575;
+    font-size: 15px;
+}
+.colchange h3,.colchange img{
+    margin-left: 0px;
+}
+.colchange2 h3,.colchange2 img{
+    margin-right: 0px;
+}
+.fadeintop {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 2s;
+}
+.fadeinbottom {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s;
+}
+}
+@media only screen and (max-width: 500px)
+{
+  .icon1{
+    margin-left: 15px;
+  
+}  
+}
+
+@media only screen and (max-width: 920px)
+{
+  .icon1
+{
+    margin-left: 15px;
+}
+.line img{
+  height:100%;
+  width: 100%;
+    margin-left: 7px;
+}
+
+}
+

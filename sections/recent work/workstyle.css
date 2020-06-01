@@ -73,7 +73,15 @@
 
 @media only screen and (max-width: 990px) {
 	.right-side{
-		top: 30%;
+		top: 15%;
 		left: 10%;
 	}
+  
+}
+@media only screen and (max-width: 500px) {
+	
+     .left-side{
+          height:100%;   
+          padding: 0px 12px;
+      }
 }
