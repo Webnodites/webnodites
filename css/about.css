@@ -135,7 +135,8 @@ p{
 .aboutus
 {
   /*height: 100vh;*/
-  margin-bottom: 80px;
+  padding-bottom: 50px;
+  background-color: 	#f5f5f5;
 }
 /*section1*/
 .aboutus h2{
@@ -156,7 +157,7 @@ p{
 /*section2*/
 
 .qualitydesign{
-  background: rgb(68, 81, 90);
+  background: #202429;
   padding: 30px;
   min-height: auto;
 }
@@ -196,6 +197,9 @@ p{
 
 /*section3*/
 
+.howwework{
+  background-color: #f5f5f5;
+}
 .howwework h2{
   font-size: 36px;
   font-weight: 400;
@@ -212,6 +216,9 @@ p{
 
 /*section4*/
 
+.values{
+  background-color:  #c89666;
+}
 .values h2{
   font-size: 36px;
   font-weight: 400;
@@ -234,7 +241,6 @@ p{
 }
 
 /*section5*/
-
 .designtitle{
   width: 100%;
 }
@@ -247,6 +253,7 @@ p{
   padding: 40px 0 90px;
   margin-top: 20px;
   margin-bottom: 0!important;
+  background-color:  #f5f5f5;
 }
 .hownew .box{
   padding: 15px 15px;
