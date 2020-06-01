@@ -364,9 +364,9 @@ p{
  .sidebar-contact {
    position: fixed;
    transform: translateY(-50%);
-   top: 71%;
-   right: -350px;
-   width: 350px;
+   top: 50%;
+   right: -300px;
+   width: 300px;
    height: auto;
    padding: 40px;
    background: #111;
