@@ -1,0 +1,53 @@
+.video-section{
+	min-height: 50vh;
+	background-color: rgba(0,0,0,0.9);
+}
+.our-video{
+	margin: 100px 0px;
+
+}
+.video{
+	height: 400px;
+}
+.videodiv{
+	padding: 15px;
+    height: 100%;
+    border-radius: 20px;
+}
+.videodiv iframe{
+	height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.video-text{
+	height: 400px;
+}
+.videotextdiv{
+	padding: 50px 28px;
+    text-align: center;
+}
+.videotextdiv .heading-title{
+    color: cyan;
+    text-align: center;
+    height: 60px;
+}    
+.videotextdiv p{
+	    font-size: 18px;
+    color: white;
+
+}
+@media (max-width: 992px)
+{
+	.videodiv{
+		text-align: center;
+	}
+ .videodiv iframe{
+	height: 80%;
+    width: 80%;
+
+}
+.videotextdiv{
+	padding: 50px 50px;
+}
+
+}
