@@ -1,16 +1,14 @@
-
-$(document).ready(function(){
-        $('.toggle').click(function(){
+ $(document).ready(function(){
+      $('.toggle').click(function(){
           $('.sidebar-contact').toggleClass('active')
-          $('.toggle').toggleClass('active')
-
-    });
+              $('.toggle').toggleClass('active')
+          });
 
           $('.menu-toggle').click(function(){
-        $('nav').toggleClass('active')
+            $('nav').toggleClass('active')
+          });
       
-
-    });
+        fadeinSections();
 
         function fadeinSections(verticalSpace) {
           var pageTop = jQuery(document).scrollTop();
@@ -69,11 +67,7 @@ $(document).ready(function(){
         jQuery(document).ready(function(e) {
             fadeinSections(50);
         });
-
         jQuery(document).on("scroll", function () {
-            fadeinSections(150);
+            fadeinSections(100);
         });
-}); 
-
-
-   
+});    

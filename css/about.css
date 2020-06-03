@@ -116,9 +116,13 @@
   background-position: 50% 15px;
   padding-bottom: 100px;
 }
+
 p{
-  font-family: 'book man old style';
+  font-family: 'roboto slab';
+
 }
+
+
 .page-section{
   width: 100%;
   display: block;
@@ -135,15 +139,17 @@ p{
 .aboutus
 {
   /*height: 100vh;*/
-  margin-bottom: 80px;
+  padding-bottom: 50px;
+  background-color: 	#f5f5f5;
 }
 /*section1*/
 .aboutus h2{
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 400;
   color: black;
   text-align: left;
   padding: 20px 0;
+  font-family: 'kelly slab';
 
 }
 .aboutus p{
@@ -156,7 +162,7 @@ p{
 /*section2*/
 
 .qualitydesign{
-  background: rgb(68, 81, 90);
+  background: #202429;
   padding: 30px;
   min-height: auto;
 }
@@ -169,7 +175,8 @@ p{
   color: rgb(255, 255, 255);
   position: relative;
   margin-bottom: 44px;
-  font-size: 36px;
+  font-size: 46px;
+  font-family: 'kelly slab';
 }
 .qualitydesign .block-one {
   margin-bottom: 44px;
@@ -196,12 +203,16 @@ p{
 
 /*section3*/
 
+.howwework{
+  background-color: #f5f5f5;
+}
 .howwework h2{
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 400;
   color: black;
   text-align: left;
-  padding: 20px 0;    
+  padding: 20px 0; 
+  font-family: 'kelly slab';   
 }
 .howwework img{
   width: 100%;
@@ -212,12 +223,16 @@ p{
 
 /*section4*/
 
+.values{
+  background-color:  #c89666;
+}
 .values h2{
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 400;
   color: black;
   text-align: left;
-  padding: 20px 0;    
+  padding: 20px 0; 
+  font-family: 'kelly slab';   
 }
 .values .content {
   line-height: 1.5;
@@ -234,7 +249,6 @@ p{
 }
 
 /*section5*/
-
 .designtitle{
   width: 100%;
 }
@@ -247,6 +261,7 @@ p{
   padding: 40px 0 90px;
   margin-top: 20px;
   margin-bottom: 0!important;
+  background-color:  #f5f5f5;
 }
 .hownew .box{
   padding: 15px 15px;
@@ -539,9 +554,9 @@ ul{
 .sidebar-contact {
    position: fixed;
    transform: translateY(-50%);
-   top: 71%;
-   right: -350px;
-   width: 350px;
+   top: 50%;
+   right: -300px;
+   width: 300px;
    height: auto;
    padding: 40px;
    background: #111;
