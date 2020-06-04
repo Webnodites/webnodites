@@ -18,11 +18,9 @@ body
   background-color: #fcfcfc;
   min-height:50vh;
 }
-#template{
-  background-color: brown;
-  min-height:100vh ;
-  padding-top: 100px;
-}
+/*#template{
+  background-color: white;
+}*/
 
 /*home */
 
@@ -390,6 +388,155 @@ h4{
 }
 
 }
+
+/*Recent Work Area*/
+.work-area{
+  background-color: white;
+  padding: 15px 0px;
+}
+.work-head h2{
+    text-align: center;
+    font-weight: 700;
+    color: #023575;
+    /*font-family: Open Sans;*/
+    font-size: 40px;
+    line-height: 50px;
+}
+.carousel {
+    position: relative;
+    height: 100vh;
+}
+.carousel-inner,.carousel-inner .item {
+  height: 100%;
+}
+.item .main{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.left-side {
+    left: 3%;
+    padding: 20px 60px;
+    top: 15%;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+ .left-side p{ 
+   font-size: 18px;
+   padding: 20px 0px;
+   }
+.left-side a{ 
+   color: white;
+   background-color: #023575;
+ }   
+ .left-side a:hover{ 
+   color: white;
+   background-color: blue;
+ }
+ .right-side{
+  left: 3%;
+    padding: 20px 0px;
+    top: 20%;
+    color: #fff;
+ }
+ .right-side .pcview{
+  height: 400px;
+  width: 80%;
+  border-radius: 20px;
+ }
+  .right-side .mbview{
+    position: absolute;
+  height: 60%;
+  width: 25%;
+  border-radius: 20px;
+  top: 45%;
+  left: 60%;
+ }
+ .carousel-control {
+  width: 10%;
+ }
+ .carousel-control .glyphicon-chevron-left{
+    left: 25%;
+}
+.carousel-control .glyphicon-chevron-right {
+    right: 25%;
+}
+
+@media only screen and (max-width: 990px) {
+  .right-side{
+    top: 15%;
+    left: 10%;
+  }
+  
+}
+@media only screen and (max-width: 500px) {
+  
+     .left-side{
+          height:100%;   
+          padding: 0px 12px;
+      }
+}
+/*End Recent Work Area*/
+
+/*Video Section*/
+.video-area{;
+  background-color: #181818;
+}
+.our-video{
+  margin: 100px 0px;
+
+}
+.video{
+  height: 400px;
+}
+.videodiv{
+  padding: 15px;
+    height: 100%;
+    border-radius: 20px;
+}
+.videodiv iframe{
+  height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.video-text{
+  /*height: 400px;*/
+}
+.videotextdiv{
+  padding: 50px 28px;
+    text-align: center;
+}
+.videotextdiv .heading-title{
+    color: #1309d9;
+    text-align: center;
+        margin-bottom: 50px;
+    /*height: 60px;*/
+}    
+.videotextdiv p{
+      font-size: 18px;
+    color: white;
+
+}
+@media (max-width: 992px)
+{
+  .videodiv{
+    text-align: center;
+  }
+ .videodiv iframe{
+  height: 80%;
+    width: 80%;
+
+}
+.videotextdiv{
+  padding: 50px 50px;
+}
+
+}
+/*End Video Section*/
+
+
 
 
   /* CONTACT SECTION */
