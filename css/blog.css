@@ -598,7 +598,7 @@ ul{
 .post-slider .next{
   position: absolute;
   top: 40%;
-  right: 30px;
+  right: 70px;
   font-size: 2em;
   color:#006669;
   cursor: pointer;
@@ -607,7 +607,7 @@ ul{
 .post-slider .prev{
   position: absolute;
   top: 40%;
-  left:30px;
+  left:70px;
   font-size: 2em;
   color:#006669;
   cursor: pointer;
