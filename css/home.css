@@ -469,9 +469,18 @@ h4{
 }
 
 @media only screen and (max-width: 990px) {
+  .left-side{
+    top: 0;
+  }
   .right-side{
-    top: 15%;
+    top: 0;
     left: 10%;
+  }
+  .right-side .pcview{
+    height: 300px;
+  }
+  .right-side .mbview{
+    height: 52%;
   }
   
 }
@@ -797,10 +806,9 @@ position: relative;
 /*testimony*/
 
 .testimony{
-  height: 100vh;
   background-color: whitesmoke;
   width: 100%;
-  padding: 0px 15px;
+  padding: 50px 15px;
 
 }
 .testimony .title h1{
