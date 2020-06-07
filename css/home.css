@@ -5,15 +5,55 @@ body
   }
 
 #Home{
-  background-color: black;
+  background-color:;
   min-height:100vh ;
   
 }
 #topology {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
+/*TYPEWRITER*/
+.h1typewriter{
+  padding-top: 150px;
+  padding-bottom: 0px;
+  color: white;
+  font-size: 50px;
+  text-align:left;
+  margin-left:8%;
+  text-decoration: none;
+  font-family: "Roboto slab";
+}
+
+.typewrite{
+  color: #00e6e6;
+}
+
+.typewrite:hover{
+  color: #00e6e6;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px){
+  .h1typewriter{
+    padding-top: 50px;
+    padding-bottom: 0px;
+    color: white;
+    font-size: 50px;
+    text-align:left;
+    margin-left:5%;
+    text-decoration: none;
+    font-family: "Roboto slab";
+    z-index: -1;
+  }
+
+  #topology {
+    width: 100%;
+    height: 100vh;
+  }
+  
+}
 #planning{
   background-color: #fcfcfc;
   min-height:50vh;
