@@ -231,15 +231,17 @@ display: none;
 	transition:all .5s ease;
 	
 }
-.feature input
+.feature a
 {
 	margin-bottom:20px;
 	color:black;
 	font-size:20px;
-	border-radius:5px;
+  border-radius:10px;
+  border: 1px solid black;
 	border:none;
-	height:50px;
-	width:75%;
+	height:45px;
+  width:60%;
+  background-color: white;
 	margin-top: 100px;
 	}
 .portfoliobox:hover .feature
@@ -247,7 +249,7 @@ display: none;
 	margin-top:100px;
 	transition:all .5s ease;
 }
-.feature input:hover
+.feature a:hover
 {
 	color:blue;
 }
