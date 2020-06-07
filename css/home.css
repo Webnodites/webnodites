@@ -383,6 +383,7 @@ h4{
   .icon1
 {
     margin-left: 0px;
+    width: 98%;
 }
 .line img{
 	height:100%;
@@ -786,7 +787,7 @@ bottom: 0;
 {
 
 #top{
-margin-bottom: 0px;
+margin-bottom: -20px;
 }
 #contact{
 position: relative;
