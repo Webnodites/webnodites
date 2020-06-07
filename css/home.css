@@ -81,7 +81,7 @@ body
   }
   .menu-toggle
   {
-    color: #1309d9;
+    color: #00e6e6;
     float: right;
     line-height: 50px;
     font-size: 24px;
@@ -98,7 +98,7 @@ body
       .menu-toggle
       {
       display: block;
-      padding-top: 10px;
+      padding-top: 0px;
       }
        header nav
         {
@@ -207,7 +207,7 @@ h4{
 /*    about  section  */
 
 .about-area {
-    background-color: #181818;
+    background-color: whitesmoke;
     position: relative;
     padding: 0px 0;
 }
@@ -237,7 +237,7 @@ h4{
     line-height: 25px;
     font-size: 19px;
     text-align: left;
-    color: whitesmoke;
+    color: black;
 }
 .about-area a{
     background-color:#023575 ;
@@ -254,7 +254,9 @@ h4{
   /*end about section*/
 
 /*planning*/
-
+#planning{
+  background-color: whitesmoke;
+}
 .planning-area .heading h2{
 	 text-align: center;
     font-weight: 700;
@@ -392,7 +394,7 @@ h4{
 
 /*Recent Work Area*/
 .work-area{
-  background-color: white;
+  background-color: whitesmoke;
   padding: 15px 0px;
 }
 .work-head h2{
@@ -445,13 +447,13 @@ h4{
  .right-side .pcview{
   height: 400px;
   width: 80%;
-  border-radius: 20px;
+  border-radius: 10px;
  }
   .right-side .mbview{
     position: absolute;
   height: 60%;
   width: 25%;
-  border-radius: 20px;
+  border-radius: 10px;
   top: 45%;
   left: 60%;
  }
@@ -483,17 +485,18 @@ h4{
 
 /*Video Section*/
 .video-area{
-  background-color: #443737;
+  background-color: whitesmoke;
 }
 .our-video{
   margin: 100px 0px;
 
 }
 .video{
+ 
   height: 400px;
 }
 .videodiv{
-    padding: 15px;
+    padding: 25 px;
     height: 100%;
     
 }
@@ -501,7 +504,7 @@ h4{
   height: 100%;
     width: 100%;
     border-radius: 10px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .videotextdiv{
@@ -794,14 +797,14 @@ position: relative;
 
 .testimony{
   height: 100vh;
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   padding: 0px 15px;
 
 }
 .testimony .title h1{
   text-align: center;
-  color: #1309d9;
+  color: black;
     font-size: 36px;
     margin: 50px;
 }
@@ -903,5 +906,5 @@ position: relative;
 }
 .block_btn:hover{
   text-decoration: none;
-  color: white;
+  color:white;
 }
