@@ -652,6 +652,6 @@ ul{
   margin-bottom: 0px;
 }
 #contact{
-  position: relative;
+  position: inherit;
 } 
 }
