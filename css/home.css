@@ -5,7 +5,7 @@ body
   }
 
 #Home{
-  background-color:;
+  background-color:transparent;
   min-height:100vh ;
   
 }
@@ -843,7 +843,7 @@ bottom: 0;
 margin-bottom: -20px;
 }
 #contact{
-position: relative;
+position: inherit;
 } 
 }
 
