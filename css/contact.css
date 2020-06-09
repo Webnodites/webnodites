@@ -308,7 +308,7 @@ ul, li {
     min-height: auto;
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 960px)
 {
     .contactpage{
         height: 1000px;
@@ -326,9 +326,7 @@ ul, li {
         margin-left: 0px;
         padding: 70px 20px;
     }
-    .direction-banner{
-        margin-top:30px;
-    }
+
     .contact-left-socials
     {
         margin-left: 100px;
