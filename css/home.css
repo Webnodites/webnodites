@@ -84,26 +84,23 @@ body
   {
       color: white;
       height: 90px;
-      
+      width:250px;
       line-height: 50px;
       font-size: 24px;
       float: left;
       font-weight: bold;
   }
-  header .logo #img1{
+  header .logo img{
 
     height: 95%;
-    width: 100px;
+    width: 100%;
     float: left;
   }
-   header .logo #img2{
-      float: right;
-    height: 50%;
-    margin-top: 35px;
-  }
+
   header nav
   {
       float: right;
+      margin-top: 20px;
   }
   header nav ul
   {
@@ -163,7 +160,7 @@ body
        width: 100%;
        height: calc(100vh-50px);
        background: black;
-       top: 50px;
+       top: 90px;
        transition: 0.5s;
         }
   
