@@ -447,70 +447,19 @@ h4{
 }
 
 /*Recent Work Area*/
-.work-area{
-  background-color: whitesmoke;
-  padding: 15px 0px;
-}
-.work-head h2{
-    text-align: center;
-    font-weight: 700;
-    color: #023575;
-    /*font-family: Open Sans;*/
-    font-size: 40px;
-    line-height: 50px;
+
+.hero-section {
+  overflow: hidden;
+    height: 600px;
+    background-color: white;
 }
 .carousel {
     position: relative;
-    height: 100vh;
+     height: 100%;
 }
 .carousel-inner,.carousel-inner .item {
-  height: 100%;
+ 
 }
-.item .main{
-  position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-}
-.left-side {
-    left: 3%;
-    padding: 20px 60px;
-    top: 15%;
-    color: #fff;
-    text-align: left;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
- .left-side p{ 
-   font-size: 18px;
-   padding: 20px 0px;
-   }
-.left-side a{ 
-   color: white;
-   background-color: #023575;
- }   
- .left-side a:hover{ 
-   color: white;
-   background-color: blue;
- }
- .right-side{
-  left: 3%;
-    padding: 20px 0px;
-    top: 20%;
-    color: #fff;
- }
- .right-side .pcview{
-  height: 400px;
-  width: 80%;
-  border-radius: 10px;
- }
-  .right-side .mbview{
-    position: absolute;
-  height: 60%;
-  width: 25%;
-  border-radius: 10px;
-  top: 45%;
-  left: 60%;
- }
  .carousel-control {
   width: 10%;
  }
@@ -520,30 +469,86 @@ h4{
 .carousel-control .glyphicon-chevron-right {
     right: 25%;
 }
+.carousel-indicators {
+  top: 75%;
+}
 
-@media only screen and (max-width: 990px) {
-  .left-side{
-    top: 0;
-  }
-  .right-side{
-    top: 0;
-    left: 10%;
-  }
-  .right-side .pcview{
-    height: 300px;
-  }
-  .right-side .mbview{
-    height: 52%;
-  }
-  
+.item {
+  height: 724px;
+  padding-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #0a183d;
 }
-@media only screen and (max-width: 500px) {
-  
-     .left-side{
-          height:100%;   
-          padding: 0px 12px;
-      }
+
+.item .hs-text h2 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 25px;
+  line-height: 0.9;
+  position: relative;
+  top: 50px;
+
 }
+
+.item .hs-text h2 span {
+  color: #fc0254;
+}
+
+.item .hs-text p {
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-size: 16px;
+  position: relative;
+  top: 50px;
+
+}
+
+.item .site-btn {
+  position: relative;
+  top: 50px;
+  margin-bottom: 20px;
+    color: white;
+   background-color: #023575;
+
+}
+.item .site-btn:hover{
+ color: white;
+   background-color: blue;
+}
+.item .sb-c2 {
+  margin-left: 8px;
+}
+
+.item .hs-text {
+  padding: 40px 60px;
+
+}
+
+.hr-img img {
+  width: 90%;
+  position: relative;
+  top: 90px;
+
+}
+@media (max-width: 990px)
+{
+
+  .hero-section {
+    height: 600px;
+  }
+  .hr-img{
+    display: none;
+  }
+  .item .hs-text {
+  padding: 0px 10px;
+  }
+}
+
 /*End Recent Work Area*/
 
 /*Video Section*/
