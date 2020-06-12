@@ -108,7 +108,7 @@ display: none;
 }
 
 .page {
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 .port-banner {
     background-image: url(../img/portilio-banner.jpg);
@@ -176,10 +176,10 @@ display: none;
     transform: translateX(0);
 }
 .portfoliobox {
-    width: 31%;
+    width: 100%;
     float: left;
     margin: 1% 1%;
-    height: 400px;
+    height: 500px;
     position: relative;
     margin-bottom: 50px;
 } 
