@@ -91,8 +91,7 @@ body
       font-weight: bold;
   }
   header .logo img{
-
-    height: 95%;
+    margin-top: -10px;
     width: 100%;
     float: left;
   }
