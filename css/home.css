@@ -83,7 +83,7 @@ body
   header .logo
   {
       color: white;
-      height: 90px;
+      height: 75px;
       width:250px;
       line-height: 50px;
       font-size: 24px;
@@ -91,8 +91,8 @@ body
       font-weight: bold;
   }
   header .logo img{
-    margin-top: 7px;
-    width: 100%;
+    margin-top: -5px;
+    width: 85%;
     float: left;
   }
 
@@ -450,7 +450,7 @@ h4{
 .hero-section {
   overflow: hidden;
     height: 600px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 .carousel {
     position: relative;
