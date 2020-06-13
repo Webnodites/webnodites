@@ -150,7 +150,7 @@ body
       .menu-toggle
       {
       display: block;
-      padding-top: 0px;
+      padding-top: 20px;
       }
        header nav
         {
@@ -159,7 +159,8 @@ body
        width: 100%;
        height: calc(100vh-50px);
        background: black;
-       top: 90px;
+       top: 70px;
+
        transition: 0.5s;
         }
   
