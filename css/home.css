@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body
   {
       margin: 0;
       padding: 0;
+      
   }
 
 #Home{
@@ -23,7 +25,7 @@ body
   text-align:left;
   margin-left:8%;
   text-decoration: none;
-  font-family: "Roboto slab";
+  font-family: 'Open Sans', sans-serif;
 }
 
 .typewrite{
@@ -121,7 +123,7 @@ body
       padding: 0 20px;
       text-decoration: none; 
       font-size: 17px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   header nav ul li a:hover
   {
@@ -208,7 +210,7 @@ right: 0px;
 }
 .toggle:before {
   content: "REQUEST A CALL BACK \f003";
-  font-family: fontAwesome;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 18px;
 }
@@ -220,6 +222,7 @@ right: 0px;
   margin: 0 0 20px;
   padding: 0;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -263,6 +266,7 @@ h4{
     background-color: whitesmoke;
     position: relative;
     padding: 0px 0;
+    font-family: 'Montserrat', sans-serif;
 }
 .about-area .rowarea{
     padding: 30px 15px;
@@ -271,7 +275,7 @@ h4{
     text-align: center;
     font-weight: 700;
     color: #023575;
-    /*font-family: Open Sans;*/
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     line-height: 50px;
 }
@@ -298,6 +302,8 @@ h4{
     color: white;
     border-radius: 20px;
     width: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
 }
 .about-area a:hover{
     color: white;
@@ -309,6 +315,8 @@ h4{
 /*planning*/
 #planning{
   background-color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 .planning-area .heading h2{
 	 text-align: center;
@@ -331,14 +339,16 @@ h4{
 	text-align: center;
 }
 .icon1{
-    padding-left: 65px;
+    padding-left: 85px;
    padding-top: 70px;
+   margin-bottom: 20px;
 }
 .icon2{
 	 padding-right: 90px;
 }
 .icon1 h3, .icon2 h3{
-	color: #023575;
+  color: #023575;
+  font-size: 20px;
 }
 
 .icon1 img, .icon2 img{
@@ -487,6 +497,7 @@ h4{
   line-height: 0.9;
   position: relative;
   top: 50px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -500,6 +511,7 @@ h4{
   font-size: 16px;
   position: relative;
   top: 50px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -559,6 +571,7 @@ h4{
 /*Video Section*/
 .video-area{
   background-color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
 }
 .our-video{
   margin: 100px 0px;
@@ -587,12 +600,15 @@ h4{
 .videotextdiv .heading-title{
     color: black;
     text-align: center;
-        margin-bottom: 50px;
-    /*height: 60px;*/
+      margin-top: -20px;
+        margin-bottom: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
 }    
 .videotextdiv p{
-      font-size: 18px;
+   font-size: 18px;
     color: black;
+  ;
 
 }
 @media (max-width: 992px)
@@ -631,6 +647,7 @@ h4{
 }
 .text-left {
  text-align: left !important;
+ font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 767px)
@@ -650,6 +667,7 @@ float: right;
  font-size: 16px;
  color: #cfd8dc;
  transition: all 0.2s;
+ font-family: 'Montserrat', sans-serif;
 }
 }
 
@@ -843,6 +861,8 @@ resize: none;
 .foot{
  text-align: center;
  padding-bottom: 25px;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 20px;
 }
 
 /* STICKY PAGE*/
@@ -877,8 +897,9 @@ position: inherit;
 .testimony .title h1{
   text-align: center;
   color: black;
-    font-size: 36px;
+    font-size: 40px;
     margin: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 .testimony .slider{
   border: 1px solid black;
@@ -960,9 +981,10 @@ position: inherit;
     margin: 0 auto;
 }
 .contact_header-title {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 60px;
     margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .block_btn {
     color: #fff;
@@ -975,6 +997,7 @@ position: inherit;
     background-color: #1309d9;
     display: inline-block;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 .block_btn:hover{
   text-decoration: none;
