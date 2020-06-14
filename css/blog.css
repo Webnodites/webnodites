@@ -259,10 +259,10 @@ a{
    text-align: center;
    font-size: 12px;
 }
-ul{
+/*ul{
    margin: 0px;
    padding: 0;
-}
+}*/
 .footerlist li {
    color: #fff;
    display: inline;

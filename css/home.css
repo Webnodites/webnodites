@@ -744,10 +744,10 @@ color: #00e6e6 ;
  text-align: center;
  font-size: 12px;
 }
-ul{
+/*ul{
  margin: 0px;
  padding: 0;
-}
+}*/
 .footerlist li {
  color: #fff;
  display: inline;
@@ -864,6 +864,9 @@ resize: none;
  font-family: 'Open Sans', sans-serif;
  font-size: 20px;
 }
+.local-scroll{
+  padding-left: 10%;
+}
 
 /* STICKY PAGE*/
 #top{
@@ -884,6 +887,9 @@ margin-bottom: -20px;
 #contact{
 position: inherit;
 } 
+.local-scroll{
+  padding-left: 90%;
+}
 }
 
 /*testimony*/
