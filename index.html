@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Webnodites</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
@@ -10,65 +11,120 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="js/home.js"></script>        
-<link  rel="shortcut icon" href="Images/logo/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/home.js"></script>        
+    <link  rel="shortcut icon" href="Images/logo/favicon.png">
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
   <div class="page ng-scope" id="top"> 
-    <section id="Home">         
-        
-        <div id="topology"> 
-            <header style="z-index: 2;">
-
-                <div class="logo"><img id="img1" src="Images/logo/wlogo.png"></div>
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html"  > HOME</a></li>
-                        <li><a href="about.html"  > WHO WE ARE</a></li>
-                        <li><a href="services.html" > SERVICES</a></li>
-                        <li><a href="portfolio.html" > PORTFOLIO</a></li>
-                        <li><a href="blog.html"  > BLOG</a></li>
-                        <li><a href="contact.html" > CONTACT</a></li>
-                    </ul>   
-                </nav>
-                <div class="menu-toggle"><i class="fa fa-bars"></i></div>
-            </header>
-            
-            
-            <div class='pageOne' id='p1'> 
-              <h1 class='h1typewriter'> <!--start of heading-->
-              <a href="#" class=" typewrite" data-period="1500" data-type='[ "Welcome to Webnodites.", "We are Web Developers.", "We love to code!" ]'> </a>
-                  </h1> <!--end of heading-->
-              </div>
-                
-              
-              <!--- Side Bar --->
-                  <div class="sidebar-contact">
-                      <div class="toggle"></div>
-                      <h2>REQUEST A CALL BACK</h2>
-                      <form action="" class="ng-pristine ng-valid">
-                          <input type="text" placeholder="Name">
-                          <input type="email" placeholder="Email">
-                          <input type="rel" placeholder="Phone Number">
-                          <textarea placeholder="Message"></textarea>
-                          <input type="submit" value="Send">
-                      </form>
-                  </div>
-            
-
-                    
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  
+  
+    <div class="site-wrap">
+  
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
         </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+     
+      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+  
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+  
+            <div class="col-4">
+              <h1 class="m-0 site-logo"><a href="index.html">Webnodites</a></h1>
+            </div>
+  
+            <div class="col-8">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="#" class="nav-link">Home</a></li>
+                  <li><a href="#" class="nav-link">Who We Are</a></li>
+                  <li><a href="#" class="nav-link">Services</a></li>
+                  <li><a href="#" class="nav-link">Portfolio</a></li>
+                  <li><a href="#" class="nav-link">Blog</a></li>
+                  <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+  
+  
+              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+  
+            </div>
+  
+          
+          </div>
+        </div>
+        
+      </header>
+  
+      <div id="topology" class="site-blocks-cover overlay bg-light"> 
+      
+        
+  
+        <div class="container">
+          <div class="row justify-content-center">
+  
+            <div class="col-12 text-center align-self-center text-intro">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <h1 class="text-white" data-aos="fade-up" data-aos-delay="">We Are Digital Services</h1>
+                  <p class="lead text-white" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos magnam maxime voluptates libero, nobis impedit aut corrupti sunt possimus.</p>
+                  <p data-aos="fade-up" data-aos-delay="200"><a href="#services-section" class="btn smoothscroll btn-primary">Our Services</a></p>
+  
+                </div>
+              </div>
+            </div>
+              
+          </div>
+        </div>
+        <div class="sidebar-contact">
+          <div class="toggle"></div>
+          <h2>REQUEST A CALL BACK</h2>
+          <form action="" class="ng-pristine ng-valid">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="rel" placeholder="Phone Number">
+              <textarea placeholder="Message"></textarea>
+              <input type="submit" value="Send">
+          </form>
+      </div>
+  
+      </div>  
+              <script src="js/three.r95.min.js"></script>
+              <script src="js/vanta.rings.min.js"></script>
+              <script src="js/app.js"></script>
+    </div>
             
-            <script src="js/three.r95.min.js"></script>
-            <script src="js/vanta.rings.min.js"></script>
-            <script src="js/app.js"></script>
-    </section>
+      
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
    
   <!--About-->    
     <section id="about" class="about-area">
