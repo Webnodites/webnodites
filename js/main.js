@@ -9,8 +9,8 @@ jQuery(document).ready(function($) {
 	"use strict";
 
 	
-	$(".loader").delay(200).fadeOut("slow");
-  $("#overlayer").delay(200).fadeOut("slow");	
+	$(".loader").delay(1000).fadeOut("slow");
+  $("#overlayer").delay(1000).fadeOut("slow");	
   
 
 	var siteMenuClone = function() {
@@ -134,33 +134,51 @@ jQuery(document).ready(function($) {
 		    items: 1,
 		    loop: true,
 				stagePadding: 0,
-		    margin: 0,
+		    margin: 20,
+		    smartSpeed: 1000,
 		    autoplay: true,
 		    nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
+				navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">'],
 		    responsive:{
 	        600:{
-	        	margin: 0,
+	        	margin: 20,
 	        	nav: true,
 	          items: 2
 	        },
 	        1000:{
-	        	margin: 0,
+	        	margin: 20,
+	        	stagePadding: 0,
+	        	nav: true,
+	          items: 2
+	        },
+	        1200:{
+	        	margin: 20,
 	        	stagePadding: 0,
 	        	nav: true,
 	          items: 3
-	        },
-	        1200:{
-	        	margin: 0,
-	        	stagePadding: 0,
-	        	nav: true,
-	          items: 4
 	        }
 		    }
 			});
 		}
 
-		$('.slide-one-item').owlCarousel({
+		
+
+	  $('.owl-carousel-one').owlCarousel({
+	    center: false,
+	    items: 1,
+	    loop: true,
+		stagePadding: 0,
+	    margin: 0,
+	    autoplay: false,
+	    pauseOnHover: false,
+	    nav: true,
+	    dots:false,
+	    smartSpeed:1000,
+	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+	  });
+
+	  
+	  $('.slide-one-item-alt').owlCarousel({
 	    center: false,
 	    items: 1,
 	    loop: true,
@@ -168,12 +186,46 @@ jQuery(document).ready(function($) {
 	    margin: 0,
 	    smartSpeed: 1000,
 	    autoplay: true,
-	    pauseOnHover: false,
-	    autoHeight: true,
-	    nav: false,
-	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+	    pauseOnHover: true,
+	    onDragged: function(event) {
+	    	console.log('event : ',event.relatedTarget['_drag']['direction'])
+	    	if ( event.relatedTarget['_drag']['direction'] == 'left') {
+	    		$('.slide-one-item-alt-text').trigger('next.owl.carousel');
+	    	} else {
+	    		$('.slide-one-item-alt-text').trigger('prev.owl.carousel');
+	    	}
+	    }
 	  });
+	  $('.slide-one-item-alt-text').owlCarousel({
+	    center: false,
+	    items: 1,
+	    loop: true,
+			stagePadding: 0,
+	    margin: 0,
+	    smartSpeed: 1000,
+	    autoplay: true,
+	    pauseOnHover: true,
+	    onDragged: function(event) {
+	    	console.log('event : ',event.relatedTarget['_drag']['direction'])
+	    	if ( event.relatedTarget['_drag']['direction'] == 'left') {
+	    		$('.slide-one-item-alt').trigger('next.owl.carousel');
+	    	} else {
+	    		$('.slide-one-item-alt').trigger('prev.owl.carousel');
+	    	}
+	    }
+	  });
+	  
 
+	  $('.custom-next').click(function(e) {
+	  	e.preventDefault();
+	  	$('.slide-one-item-alt').trigger('next.owl.carousel');
+	  	$('.slide-one-item-alt-text').trigger('next.owl.carousel');
+	  });
+	  $('.custom-prev').click(function(e) {
+	  	e.preventDefault();
+	  	$('.slide-one-item-alt').trigger('prev.owl.carousel');
+	  	$('.slide-one-item-alt-text').trigger('prev.owl.carousel');
+	  });
 	  
 	};
 	siteCarousel();
@@ -190,7 +242,20 @@ jQuery(document).ready(function($) {
 	};
 	// siteStellar();
 
-	
+	var siteCountDown = function() {
+
+		$('#date-countdown').countdown('2020/10/10', function(event) {
+		  var $this = $(this).html(event.strftime(''
+		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
+		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
+		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
+		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
+		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+		});
+				
+	};
+	siteCountDown();
+
 	var siteDatePicker = function() {
 
 		if ( $('.datepicker').length > 0 ) {
@@ -259,8 +324,7 @@ jQuery(document).ready(function($) {
 	  $container.isotope({ filter: '*' });
 
 	    // filter items on button click
-	  $('#filters').on( 'click', 'button', function(e) {
-	  	e.preventDefault();
+	  $('#filters').on( 'click', 'button', function() {
 	    var filterValue = $(this).attr('data-filter');
 	    $container.isotope({ filter: filterValue });
 	    $('#filters button').removeClass('active');
@@ -278,5 +342,14 @@ jQuery(document).ready(function($) {
 
 	  return false;
 	});
+
+
+$('.accordin').on('click', function(event) {
+
+    var target = $( $(this).attr('data-toggle') );
+    target.toggle();
+  
+
+});
 
 });
