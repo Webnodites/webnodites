@@ -524,14 +524,36 @@ option{
 }
  #slider_contain{
   padding: 15px;
-}
-.third_section .contain h1{
-  font-family: Poppins;
   
+   
+  
+}
+.third_section .contain .main_contain{
+  
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+  background-color: #f0f0f0;
+}
+
+.third_section .contain h3{
+  font-family: Poppins;
+  font-size: 25px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.54;
+  line-height: 1;
+  
+  text-align: left;
+  color: #000c2d;
+}
+.third_section .contain h2{
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
   
   text-align: left;
   color: #000c2d;
@@ -554,7 +576,7 @@ option{
 
   text-align: center;
   height: 300px;
-  background-color: #f0f0f0;
+ 
 
 }
 .third_section .slider_box p{
