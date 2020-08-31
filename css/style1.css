@@ -442,10 +442,7 @@ option{
   
   
 }
-.second_section{
-  padding: 50px;
-  
-}
+
 
 
 .first_section .contain{
@@ -461,7 +458,7 @@ option{
   font-stretch: normal;
   font-style: normal;
 
- 
+  padding: 15px;
   text-align: left;
   color: #000d31;
 }
@@ -515,17 +512,7 @@ option{
   text-align: center;
   color: rgba(0, 13, 49, 0.71);
 }
-.second_section .contain h1{
-  font-family: Poppins;
-  
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.54;
- 
-  text-align: left;
-  color: #000c2d;
-}
+
  #slider_contain{
   padding: 15px;
   
@@ -635,7 +622,7 @@ option{
 
 
 }
-.second_section .row .col-lg-3 .heading_2 .head1{
+/*.second_section .row .col-lg-3 .heading_2 .head1{
   color: #f97933;
     border-bottom: 5px solid #f97933;
 }
@@ -652,10 +639,10 @@ option{
      color: #349bf1;
     border-bottom: 5px solid #349bf1;
 
-}
+}*/
 .second_section .row .col-lg-3 .heading_2{
  
- 
+ text-decoration: underline;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
@@ -669,9 +656,10 @@ option{
   }
 .second_section .row .col-lg-3 .detail
 {
-  margin: 20PX;
+  margin: 30px;
+  pad 
   font-family: Poppins;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -687,11 +675,21 @@ option{
   .second_section .row .col-12 {
     width: 100%;
   }
+  .second_section .row .col-lg-3 .detail
+{
+  margin: 20px;
+  font-family: Poppins;
+  
+}
+
 }
 @media (max-width: 767px){
 
-.second_section .contain .heading h1{
-  font-size: 35px;
+.second_section .contain .heading {
+ 
+  margin: 0px;
+  padding:0px; 
+  align-items: left;
 
 
 }
@@ -719,7 +717,7 @@ option{
 .third_section .slider_box{
   width: 100%;
   margin: 0px;
-  padding:0px; 
+  padding:10px; 
  height: auto;
 }
 .fourth_section{
