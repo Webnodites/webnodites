@@ -440,17 +440,6 @@ option{
 
 }
 /* start about as*/
-  
-  
-}
-
-=======
-.second_section{
-  padding: 0px;
-  margin-top: 5%;
-  
-}
->>>>>>> Stashed changes
 
 
 .first_section .contain{
@@ -470,16 +459,15 @@ option{
   text-align: left;
   color: #000d31;
 }
-.fourth_section  {
-  
-}
+
 .second_section .contain{
  /* border:1px solid black;*/
   margin: 0px;
 }
-.third_section{
- /* margin: 40px;*/
 
+
+.second_section {
+  margin-top: 3%;
 }
 .third_section .contain{
    margin: 20px;
@@ -602,18 +590,13 @@ option{
   color: #000c2d;
 }
 .third_section .slider_box{
-  ;
-  
   padding-top: 7%;
-
   text-align: center;
   height: auto;
- 
-
 }
 .third_section .slider_box p{
   font-family: Poppins;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -627,29 +610,8 @@ option{
 }
 
 
-<<<<<<< Updated upstream
-}
-/*.second_section .row .col-lg-3 .heading_2 .head1{
-  color: #f97933;
-    border-bottom: 5px solid #f97933;
-}
-.second_section .row .col-lg-3 .heading_2 .head2{
-  color: #f43868;
-    border-bottom: 5px solid #f43868;
 
-}
-.second_section .row .col-lg-3 .heading_2 .head3{
-  color: #6a40ad;
-    border-bottom: 5px solid #6a40ad;
-}
-.second_section .row .col-lg-3 .heading_2 .head4{
-     color: #349bf1;
-    border-bottom: 5px solid #349bf1;
 
-}*/
-=======
-
->>>>>>> Stashed changes
 .second_section .row .col-lg-3 .heading_2{
  
  text-decoration: underline;
@@ -666,12 +628,7 @@ option{
   }
 .second_section .row .col-lg-3 .detail
 {
-<<<<<<< Updated upstream
-  margin: 30px;
-  pad 
-=======
-  padding: 20px;
->>>>>>> Stashed changes
+  padding: 30px;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
@@ -939,7 +896,7 @@ height: 230px;
       background-color: #f0f0f0; 
       text-align: center;
       color: #000d31;
-      width: 690px;
+      width: 650px;
     }
     .col-md-3{
       margin-top: 20px;
@@ -963,7 +920,7 @@ height: 230px;
       color: rgba(0, 13, 49, 0.71);
   }
   .choose{
-    margin-top: 40px;
+    margin-top: 10px;
   }
     
 }
