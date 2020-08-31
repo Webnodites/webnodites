@@ -480,10 +480,7 @@ option{
    margin: 20px;
 
 }
-.fourth_section{
-   
-   /*border:1px solid red;*/
-}
+
 .fourth_section .contain{
  /* border:1px solid black ;*/
   padding: 20px;
@@ -536,6 +533,28 @@ option{
   background-color: #f0f0f0;
 }
 
+.second_section .contain h3{
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  
+  text-align: left;
+  color: #000c2d;
+}
+.second_section .contain h2{
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  
+  text-align: left;
+  color: #000c2d;
+}
 .third_section .contain h3{
   font-family: Poppins;
   font-size: 25px;
@@ -593,17 +612,32 @@ option{
   color: rgba(0, 13, 49, 0.71);
   
 }
-.second_section .row .col-12 .detail p{
-  
-}
-.second_section .row .col-12 {
-    background-color: #f0f0f0; ;
-   padding: 30px;
-   margin: 50px;
+
+.second_section .row .col-lg-3{
+
 
 }
-.second_section .row .col-12 .heading_2{
- text-decoration: underline;
+.second_section .row .col-lg-3 .heading_2 .head1{
+  color: #f97933;
+    border-bottom: 5px solid #f97933;
+}
+.second_section .row .col-lg-3 .heading_2 .head2{
+  color: #f43868;
+    border-bottom: 5px solid #f43868;
+
+}
+.second_section .row .col-lg-3 .heading_2 .head3{
+  color: #6a40ad;
+    border-bottom: 5px solid #6a40ad;
+}
+.second_section .row .col-lg-3 .heading_2 .head4{
+     color: #349bf1;
+    border-bottom: 5px solid #349bf1;
+
+}
+.second_section .row .col-lg-3 .heading_2{
+ 
+ 
   font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
@@ -613,16 +647,17 @@ option{
   letter-spacing: 1.15px;
   text-align: center;
   color: #000d31;
-}
-.second_section .row .col-12 .detail
+ 
+  }
+.second_section .row .col-lg-3 .detail
 {
-  margin: 10PX;
+  margin: 20PX;
   font-family: Poppins;
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  
+ background-color: #f0f0f0;
   
   text-align: center;
   color: #000d31;
@@ -630,18 +665,29 @@ option{
 
 
 @media (max-width: 991px){
-
+  .second_section .row .col-12 {
+    width: 100%;
+  }
 }
 @media (max-width: 767px){
 
 .second_section .contain .heading h1{
   font-size: 35px;
 
+
 }
-.second_section .row .col-12 {
-    background-color: #f0f0f0; ;
-   padding: 20px;
-   margin: 0px;
+
+
+.second_section .row .col-12 .heading_2 p{
+  text-align: left;
+}
+.second_section .row .col-lg-3 {
+    background-color: #f0f0f0; 
+    
+   padding: 10px;
+   margin :10px;
+   width: 100%;
+  /* border: 1px solid red;*/
 
 }
 .second_section .row {
