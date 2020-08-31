@@ -426,6 +426,8 @@ option{
   font-size: 18px;
 }
 }
+
+
 @media (max-width: 400px) {
 
 #_detail{
@@ -443,6 +445,13 @@ option{
   
 }
 
+=======
+.second_section{
+  padding: 0px;
+  margin-top: 5%;
+  
+}
+>>>>>>> Stashed changes
 
 
 .first_section .contain{
@@ -453,7 +462,7 @@ option{
 .first_section p{
   opacity: 0.97;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -467,7 +476,7 @@ option{
 }
 .second_section .contain{
  /* border:1px solid black;*/
-  margin: 20px;
+  margin: 0px;
 }
 .third_section{
  /* margin: 40px;*/
@@ -564,8 +573,8 @@ option{
   font-family: Poppins;
   font-size: 40px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
+ 
+
   line-height: 1;
   
   text-align: left;
@@ -605,7 +614,7 @@ option{
 }
 .third_section .slider_box p{
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -618,9 +627,8 @@ option{
   
 }
 
-.second_section .row .col-lg-3{
 
-
+<<<<<<< Updated upstream
 }
 /*.second_section .row .col-lg-3 .heading_2 .head1{
   color: #f97933;
@@ -640,6 +648,9 @@ option{
     border-bottom: 5px solid #349bf1;
 
 }*/
+=======
+
+>>>>>>> Stashed changes
 .second_section .row .col-lg-3 .heading_2{
  
  text-decoration: underline;
@@ -656,8 +667,12 @@ option{
   }
 .second_section .row .col-lg-3 .detail
 {
+<<<<<<< Updated upstream
   margin: 30px;
   pad 
+=======
+  padding: 20px;
+>>>>>>> Stashed changes
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
@@ -694,16 +709,22 @@ option{
 
 }
 
+.third_section .contain .main_contain{
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+}
 
 .second_section .row .col-12 .heading_2 p{
   text-align: left;
 }
 .second_section .row .col-lg-3 {
-    background-color: #f0f0f0; 
-    
-   padding: 10px;
-   margin :10px;
+  background-color: #f0f0f0; 
+   padding: 0px;
    width: 100%;
+   margin-top: 20px;
   /* border: 1px solid red;*/
 
 }
@@ -763,18 +784,17 @@ option{
   margin: 10px;
 
 }
+
+.choose{
+  margin-top: 40px;
 }
+}
+
 @media (max-width: 420px){
 
   
 }
-@media (max-width: 400px)
-/*end about as page*/
 
-
-
-
-/*end contact page style */
 
 @media (max-width: 991px) {
   #blog{
@@ -832,7 +852,6 @@ option{
   font-size: 15px;
   letter-spacing: 1px;
   margin-left: 10px 
-  
 
 }
 #blog .date{
@@ -906,4 +925,50 @@ height: 230px;
   margin: 0px;
 }
 
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .second_section .row .col-lg-3 .detail
+    {
+      padding: 10px;
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 500;
+      background-color: #f0f0f0; 
+      text-align: center;
+      color: #000d31;
+      width: 690px;
+    }
+    .col-md-3{
+      margin-top: 20px;
+      max-width: 100%;
+    }
+    .third_section .contain .main_contain{
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 40px;
+      background-color: #f0f0f0;
+    }
+
+    .fourth_section .contain .row .col-lg-4 p {
+      padding: 0px;
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: center;
+      color: rgba(0, 13, 49, 0.71);
+  }
+  .choose{
+    margin-top: 40px;
+  }
+    
+}
+
+.choose{
+  margin-top: 40px;
 }
