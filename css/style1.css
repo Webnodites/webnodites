@@ -6,8 +6,6 @@
 .all h1{
     font-size: 70px;
     font-weight: 500;
-    line-height: 1.54;
-    letter-spacing: 4.59px;
     color: #000d31;
 }
 
@@ -746,10 +744,7 @@ option{
 }
 }
 
-@media (max-width: 420px){
 
-  
-}
 
 
 @media (max-width: 991px) {
@@ -881,6 +876,14 @@ height: 230px;
   margin: 0px;
 }
 
+}
+@media (max-width: 400px){
+  .all h1{
+  font-size: 45px;
+    color: #000c2d;
+    font-weight: 900;
+}
+  
 }
 
 @media only screen 

@@ -454,8 +454,7 @@ body:after {
   border-bottom: rgba(255, 255, 255, 0.7); }
   .site-navbar .site-logo {
     position: relative;
-    left: 0;
-    top: -5px; }
+    left: 0;}
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
