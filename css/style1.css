@@ -2,6 +2,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../images/img/bg2.jpg); 
+
+}
+#about_section{
+ /* border: 1px solid black;*/
+  height: calc(50vh);
+    min-height: 400px; }
 }
 .all h1{
     font-size: 70px;
@@ -441,9 +447,12 @@ option{
 
 
 .first_section .contain{
- background-image: linear-gradient(to bottom, #fcfcfc, #0029a0 73%, #f0f0f0);
+background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/img/backgrnd.jpg); 
   padding: 10px;
   margin: 20px;
+
 }
 .first_section p{
   opacity: 0.97;
@@ -785,6 +794,9 @@ option{
   display: none;
 
 }
+#about_section .container{
+  max-width: 100%;
+}
 
 }
 
@@ -889,8 +901,11 @@ height: 230px;
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (-webkit-min-device-pixel-ratio: 1) 
+  {
+   
     .second_section .row .col-lg-3 .detail
+
     {
       padding: 10px;
       font-family: Poppins;
@@ -925,9 +940,11 @@ height: 230px;
   .choose{
     margin-top: 10px;
   }
+ 
     
 }
 
 .choose{
   margin-top: 40px;
+
 }
