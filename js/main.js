@@ -276,16 +276,20 @@ jQuery(document).ready(function($) {
    	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
       e.preventDefault();
 
-      var hash = this.hash;
-
-      // $('html, body').animate({
-      //   'scrollTop': $(hash).offset().top
-      // }, 600, 'easeInOutExpo', function(){
-      //   window.location.hash = hash;
-      // });
+      
 
     });
   };
+
+ var btn = $('#backtotop');
+
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
   OnePageNavigation();
 
   var siteScroll = function() {

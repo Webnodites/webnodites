@@ -2338,9 +2338,43 @@ figure figcaption {
 }
 
 
-
+.vl {
+    border-left: 4px solid #b9b9b9;
+    height: 65%;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+}
 .lntop{
-  width: 2px;
-  height: 100px;
-  color: gray;
+  text-align: center;
+}
+.lntop i{
+  font-size: 60px;
+  color: #b9b9b9;
+}
+
+#backtotop{
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+
+  .vl {
+      margin-top: -10px;
+    }
+  .lntop i{
+    font-size: 45px;
+  }
+
+}
+@media (max-width: 420px) {
+
+  .vl {
+      margin-top: -10px;
+    }
+  .lntop i{
+    font-size: 45px;
+  }
+
 }
