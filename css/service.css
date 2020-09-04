@@ -1,27 +1,22 @@
-.headservice {
+.all {
 	text-align: center;
 }
-.headservice h1{
-  font-size: 70px;
-  font-weight: 500;
-  line-height: 1.54;
-  letter-spacing: 4.59px;
-  text-align: center;
-  color: #000d31;
+.all h1{
+  margin-bottom: 30px;
 }
-.headservice p{
+
+.all p{
       font-size: 22px;
     padding: 0px 180px;
     font-weight: 500;
     text-align: center;
     color: #000d31;
 }
-.headservice a{
+.all a{
       border-radius: 63px;
     background-color: #000923;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 1.5;
     text-align: left;
     color: white;
     padding: 5px 30px;
@@ -37,7 +32,7 @@
 .servicesbx .box{
    box-shadow: 0 13px 18px 0 #262626;
     background: white;
-    padding: 40px 80px;
+    padding: 40px 50px;
     text-align: center;
     margin: 30px 0;
 }
@@ -49,9 +44,9 @@
     margin: 30px 0;
 }
 .servicesbx .box h2,.servicesbx .boxside h2{
-         font-size: 35px;
+         font-size: 30px;
     font-weight: 500;
-    letter-spacing: 4.38px;
+    letter-spacing: 3.38px;
     text-align: center;
     color: #000d31;
     border-bottom: solid 1px #000d31;
@@ -61,23 +56,21 @@
 .servicesbx .box p{
 	font-size: 20px;
     font-weight: 500;
-    line-height: 1.22;
     letter-spacing: 3.12px;
     text-align: center;
     color: #000d31;
-    padding: 0px 15px;
+    padding: 0px 65px;
 }
 .servicesbx .boxside p{
 	font-size: 20px;
     font-weight: 500;
-    line-height: 1.22;
     letter-spacing: 3.12px;
     text-align: center;
     color: #000d31;
     padding: 0px 40px;
 }
 .servicesbx .topup{
-	margin-top: -345px;
+	 margin-top: -224px;
 }
 .moreservice{
  padding: 100px 0;
@@ -87,14 +80,13 @@
 	width: fit-content;
 	    font-size: 40px;
     font-weight: 500;
-    line-height: 1.05;
     letter-spacing: 4.09px;
     text-align: left;
     color: #000d31;
     border-bottom: solid 1px #000d31;
 }
 .moreservice .contnt{
-	padding-top: 150px;
+	padding-top: 120px;
   background: url(../images/img/service.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,32 +96,28 @@
 	padding: 45px 0;
 }
 .moreservice .mservice h2{
-	    font-size: 32px;
+	   font-size: 32px;
     font-weight: 500;
-    letter-spacing: 4.53px;
+    letter-spacing: 3.53px;
     color: #000d31;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .moreservice .mservice p{
     font-size: 20px;
     padding-left: 30px;
     font-weight: 500;
-    line-height: 1.49;
     letter-spacing: 1.29px;
     color: #000d31;
 }
 
-
 @media (max-width: 991px) and (min-width: 768px) {
 
-  .headservice h1 {
-    font-size: 50px;
-	}
-	.headservice p {
+  
+	.all p {
     font-size: 16px;
     padding: 0px 120px;
 	}
-	.headservice a {
+	.all a {
     font-size: 20px;
 	}
 	.servicesbx .box {
@@ -140,6 +128,7 @@
 	}
 	.servicesbx .box p {
     font-size: 16px;
+        padding: 0px 33px;
 	}
 	.servicesbx .boxside p {
     font-size: 16px;
@@ -158,20 +147,24 @@
   .moreservice .mservice {
     padding: 25px 0;
     }
+    .moreservice .contnt {
+    padding-top: 85px;
+  }
 }
 @media (max-width: 767px) and (min-width: 400px) {
-   .headservice h1 {
-    font-size: 30px;
-	}
-	.headservice p {
+   
+	.all p {
     font-size: 14px;
     padding: 0px 20px;
 	}
-	.headservice a {
+   .all h1 {
+    margin-bottom: 30px;
+  }
+	.all a {
     font-size: 18px;
 	}
 	.servicesbx .box,.servicesbx .boxside {
-    padding: 40px 40px;
+    padding: 40px 20px;
 	}
 	.servicesbx .box h2, .servicesbx .boxside h2 {
     font-size: 25px;
@@ -183,33 +176,58 @@
 	.servicesbx .topup {
      margin-top: 0px; 
 	}
-	.moreservice h3 {
-    font-size: 25px;
-	}
 	.moreservice .mservice h2 {
     font-size: 22px;
     letter-spacing: 0.53px;
-    margin: 0;
+    margin-bottom: 10px;
     }
 	.moreservice .mservice p {
     font-size: 12px;
-     letter-spacing: 0.53px;
+    letter-spacing: 0.53px;
+    padding-left: 20px;
     }
-	
+    .moreservice .mservice {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+    .moreservice .pr {
+         padding-right: 100px;
+    }
+    .moreservice .pl {
+         padding-left: 65px;
+         padding-top: 20px;
+    }
+	  /*.moreservice .pl p{
+         padding-left: 40px;
+    }*/
 	.moreservice .contnt {
     padding-top: 100px;
+    background: url(../images/img/servicemb.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
     }
+    .moreservice h3 {
+    font-size: 25px;
+    letter-spacing: 3.09px;
+  }
+   .moreservice {
+    padding: 50px 0;
+}
 }
 
 @media (max-width: 400px){
-    .headservice h1 {
-    font-size: 25px;
+  .moreservice {
+    padding: 50px 0;
+}
+    .all h1 {
+    margin-bottom: 30px;
 	}
-	.headservice p {
+	.all p {
     font-size: 12px;
     padding: 0px 20px;
 	}
-	.headservice a {
+	.all a {
     font-size: 16px;
 	}
 	.servicesbx .box,.servicesbx .boxside {
@@ -221,17 +239,19 @@
 	.servicesbx .box p, .servicesbx .boxside p {
     font-size: 14px;
      padding: 0px 15px;
+     letter-spacing: 1.12px;
 	}
 	.servicesbx .topup {
      margin-top: 0px; 
 	}
 	.moreservice h3 {
-    font-size: 22px;
+    font-size: 25px;
+    letter-spacing: 3.09px;
 	}
 	.moreservice .mservice h2 {
     font-size: 20px;
     letter-spacing: 0.53px;
-    margin: 0;
+        margin-bottom: 10px;
     }
   .moreservice .mservice p {
     font-size: 10px;
@@ -239,6 +259,21 @@
     }
   
   .moreservice .contnt {
-    padding-top: 100px;
+    padding-top: 90px;
+    background: url(../images/img/servicemb.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+    }
+    .moreservice .pr {
+         padding-right: 80px;
+    }
+    .moreservice .pl {
+         padding-left: 65px;
+         padding-top: 20px;
+    }
+     .moreservice .mservice {
+    padding-top: 40px;
+    padding-bottom: 20px;
     }
 }

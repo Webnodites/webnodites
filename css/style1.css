@@ -5,13 +5,12 @@
 
 }
 #about_section{
- /* border: 1px solid black;*/
   height: calc(50vh);
-    min-height: 400px; }
+    min-height: 400px; 
 }
 .all h1{
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 700;
     color: #000d31;
 }
 
@@ -38,7 +37,6 @@ padding: 0px 40px;
     background-color: #000c2d;
     font-size: 21px;
     font-weight: 500;
-    line-height: 1.48;
     letter-spacing: 2.07px;
     text-align: left;
     color: white;
@@ -63,7 +61,6 @@ padding: 0px 40px;
 .textcat-head{
       font-size: 30px;
     font-weight: 500;
-    line-height: 1.8;
     text-align: left;
     color: #000d31;
     text-decoration: underline;
@@ -83,7 +80,6 @@ padding: 0px 40px;
 {
   font-size: 25px;
   font-weight: 500;
-  line-height: 1.18;
   color: #000d31;
   padding-top: 10px;
 }
@@ -95,7 +91,6 @@ padding: 0px 40px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.24;
   letter-spacing: 2px;
   color: #000d31;
 }
@@ -118,7 +113,6 @@ text-align: center;
    opacity: 0.60;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.24;
   color: #000d31;
 }
 
@@ -156,7 +150,6 @@ text-align: center;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.6;
   letter-spacing: 2.13px;
   text-align: left;
   color: #000d31;
@@ -185,9 +178,6 @@ text-align: center;
   font-family: Poppins;
   font-size: 17px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.35;
   letter-spacing: 1px;
   text-align: left;
   color: #000d31;
@@ -199,9 +189,6 @@ text-align: center;
   font-family: Poppins;
   
   font-weight: 600px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
   letter-spacing: 2.55px;
   text-align: left;
   color: #000d31
@@ -305,7 +292,6 @@ text-align: center;
   opacity: 0.85;
   font-size: 34px;
   font-weight: 600;
-  line-height: 0.89;
   letter-spacing: 6.95px;
   text-align: left;
   color: #eeeeee;
@@ -536,7 +522,6 @@ background-size: cover;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
   
   text-align: left;
   color: #000c2d;
@@ -547,7 +532,6 @@ background-size: cover;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
   
   text-align: left;
   color: #000c2d;
@@ -556,9 +540,6 @@ background-size: cover;
   font-family: Poppins;
   font-size: 25px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
   
   text-align: left;
   color: #000c2d;
@@ -567,31 +548,20 @@ background-size: cover;
   font-family: Poppins;
   font-size: 40px;
   font-weight: 600;
- 
-
-  line-height: 1;
   
   text-align: left;
   color: #000c2d;
 }
 .fourth_section .contain h2{
-  font-family: Poppins;
   font-size: 40px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
   
   text-align: left;
   color: #000c2d;
 }
 .fourth_section .contain h4{
-  font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
   text-decoration: underline;
   text-align: center;
   color: #000c2d;
@@ -622,12 +592,8 @@ background-size: cover;
 .second_section .row .col-lg-3 .heading_2{
  
  text-decoration: underline;
-  font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
   letter-spacing: 1.15px;
   text-align: center;
   color: #000d31;
@@ -636,11 +602,8 @@ background-size: cover;
 .second_section .row .col-lg-3 .detail
 {
   padding: 30px;
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
  background-color: #f0f0f0;
   
   text-align: center;
@@ -804,11 +767,10 @@ background-size: cover;
   .all h1{
   font-size: 50px;
     color: #000c2d;
-    font-weight: 900;
+    font-weight: 700;
 }
 #blog{
  margin: 0px;
- line-height: 1px
 }
 
 #blog .authore{
@@ -857,12 +819,8 @@ height: 230px;
  position:relative;
 
   border: solid 1px #000c2d;
-  font-family: Poppins;
   font-size: 10px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
   letter-spacing: 2.13px;
   text-align: center;
   color: #000d31
