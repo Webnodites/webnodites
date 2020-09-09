@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 	$('.owl-carousel-gym').owlCarousel({
 	    center: false,
-	    items: 3,
+	    items: 2,
 	    loop: true,
 		stagePadding: 30,
 	    margin: 30,
@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 	            nav:true
 	        },
 	        1000:{
-	            items:3,
+	            items:2,
 	            nav:true,
 	        }
     	}
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 
 	$('.owl-carousel-event').owlCarousel({
 	    center: false,
-	    items: 3,
+	    items: 2,
 	    loop: true,
 		stagePadding: 30,
 	    margin: 30,
@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 	            nav:true
 	        },
 	        1000:{
-	            items:3,
+	            items:2,
 	            nav:true,
 	        }
     	}
@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
 	$('.owl-carousel-rest').owlCarousel({
 	    center: false,
-	    items: 3,
+	    items: 2,
 	    loop: true,
 		stagePadding: 30,
 	    margin: 30,
@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
 	            nav:true
 	        },
 	        1000:{
-	            items:3,
+	            items:2,
 	            nav:true,
 	        }
     	}
@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
 
 	$('.owl-carousel-wed').owlCarousel({
 	    center: false,
-	    items: 3,
+	    items: 2,
 	    loop: true,
 		stagePadding: 30,
 	    margin: 30,
@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
 	            nav:true
 	        },
 	        1000:{
-	            items:3,
+	            items:2,
 	            nav:true,
 	        }
     	}

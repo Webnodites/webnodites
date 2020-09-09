@@ -2248,7 +2248,8 @@ figure figcaption {
 }
 @media (max-width: 767px) {
   .mission-title {
-    font-size: 25px;
+    font-size: 20px;
+    padding-right: 0;
   }
   .text-head {
     font-size: 25px;
@@ -2260,7 +2261,7 @@ figure figcaption {
     font-size: 25px;
   }
   .testmh2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: normal;
   }
   .testimony {
@@ -2270,7 +2271,7 @@ figure figcaption {
   font-size: 18px;
   }
   .block-testimony-1 .f h3{
-  font-size: 20px;
+  font-size: 18px;
   }
   .block-testimony-1 figure{
  
@@ -2280,7 +2281,9 @@ figure figcaption {
     border-radius: 30px;
    }
    .block-testimony-1 .l p {
-    font-size: 25px;
+    font-size: 18px;
+    padding-top: 15px;
+    letter-spacing: 1.4px;
   }
   .owl-nav{
     display: none;
@@ -2289,9 +2292,9 @@ figure figcaption {
   font-size: 25px;
   }
   .prj .touch-btn{
-    font-size: 20px;
-    letter-spacing: 3.38px;
-    padding: 13px 20px;
+    font-size: 18px;
+    letter-spacing: 1.38px;
+    padding: 10px 30px;
   }
   .process h3 {
     font-size: 20px;
@@ -2378,5 +2381,8 @@ figure figcaption {
   .lntop i{
     font-size: 45px;
   }
-
+  .site-blocks-cover p {
+    color: #000;
+    font-size: 16px;
+ }
 }

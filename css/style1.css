@@ -69,9 +69,12 @@ padding: 0px 40px;
 .Rectangle,.Rectangle1 {
   text-align: center;
 }
-
+.Rectangle div,.Rectangle1 div{
+  padding: 20px 0;
+}
 .Rectangle img, .Rectangle1 img{
-  height: 400px;
+  height: 350px;
+  border-radius: 10px;
 }
 .cat-slider{
   padding-bottom: 100px;
@@ -82,8 +85,24 @@ padding: 0px 40px;
   font-weight: 500;
   color: #000d31;
   padding-top: 10px;
+  margin-bottom: 15px;
 }
-
+.live-btn{
+      padding: 5px 20px;
+    border-radius: 22px;
+    border: solid 0.5px #000e35;
+    background-color: #000c2d;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1.07px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+.live-btn:hover{
+  text-decoration: none;
+  color: white;
+}
 .a-liitle-about-it 
 {
   opacity: 0.60;
@@ -94,6 +113,17 @@ padding: 0px 40px;
   letter-spacing: 2px;
   color: #000d31;
 }
+@media(max-width: 768px){
+  .Rectangle img, .Rectangle1 img{
+  height: 250px;
+}
+.live-btn{
+  font-size: 18px;
+}
+}
+
+
+
 /*end portfolio page style */
 
 /*blog page style*/
