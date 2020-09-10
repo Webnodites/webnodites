@@ -482,6 +482,25 @@ option{
 
 
 /* start about as*/
+
+.aboutmore{
+  display: none;
+}
+.readabout{
+  text-align: center;
+    padding: 20px;
+    color: #000d31; 
+}
+.readabout a{
+    color: #000d31;
+    border: 1px solid #000d31;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 .first_section .contain{
 background-size: cover;
   background-repeat: no-repeat;
@@ -497,7 +516,7 @@ background-size: cover;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-
+  margin: 0;
   padding: 15px;
   text-align: left;
   color: #000d31;
@@ -653,7 +672,13 @@ background-size: cover;
 }
 /*large mobiles*/
 @media (max-width: 767px){
-
+  .first_section p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
   .second_section .contain .heading {
    
     margin: 0px;
