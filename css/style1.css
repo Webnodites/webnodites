@@ -141,6 +141,14 @@ padding: 0px 40px;
 /*end portfolio page style */
 
 /*blog page style*/
+.blg_section{
+  padding: 50px 0;
+}
+.blg_section .heading{
+ text-align: left;
+ color: #000c2d;
+}
+
 .blogbox{
 text-align: center;
 }
@@ -148,7 +156,8 @@ text-align: center;
    height: 300px;
 }
 .blogbox .tl{
-  font-size: 25px;
+  font-size: 22px;
+  letter-spacing: normal;
   font-weight: 500;
   color: #000d31;
   padding-top: 10px;
@@ -156,6 +165,7 @@ text-align: center;
 .blogbox .dt{
    opacity: 0.60;
   font-size: 14px;
+  margin: 0;
   font-weight: 500;
   color: #000d31;
 }
@@ -177,7 +187,7 @@ text-align: center;
   width: 100%;
   height: 410px;
 }
-#blog a{
+#blog .read-more-btn{
   margin: 20px;
   float: right;
   border-radius: 25px;
@@ -235,7 +245,7 @@ text-align: center;
  box-shadow: 5px 0 3px 0 rgba(0, 0, 0, 0.16);
   border: solid 2px rgba(0, 14, 53, 0.3);
 }
-.page_link  ul li {
+.page_link_div  ul li {
    width: 50px;
     height: 50px;
     font-family: Poppins;
@@ -251,13 +261,24 @@ text-align: center;
     align-items: center;
     justify-content: center;
 }
-.page_link  ul li:first-child{
+.page_link_div .active{
+   background-color: #000e35;
+  color: #fff;
+}
+.page-link{
+  border: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.page-link:focus{
+  outline: none;
+}
+.page_link_div  ul .active .page-link{
   border: solid 1px #000e35;
   background-color: #000e35;
-}
-.page_link  ul li:first-child a{
   color: #fff;
-    font-size: 22px;
+  font-size: 22px;
 }
 
 #link_1

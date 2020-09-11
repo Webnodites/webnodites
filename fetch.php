@@ -44,26 +44,31 @@ if($total_data > 0)
   foreach($res as $blog)
   {
     $output .= '
-            <div class="post row">
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="Images/blog/'.$blog['img'].'" class="post-image">
-              </div>  
-              <div class="post-preview col-lg-8 col-md-8 col-sm-12">
-                <h1><a href="blogdetail?id='.$blog['id'].'">'. $blog['title'].'</a></h1>
-                <i class="fa fa-user">'.$blog['user'].'</i>
-                  &nbsp;
-                <i class="fa fa-calendar">'.$blog['date'].'</i>
-                <p class="preview-text">
-                    '.$blog['shortdes'].'
-                  
-                </p>
-                <div class="read-more text-right">
-                  <a href="blogdetail?id='.$blog['id'].'" class="int_btn ">Read More</a>
-                </div>
 
+            <div class="blog_section" id="blog" >
+              <div class="blog-inner">
+                <div class="row">
+                    <div class="col-lg-4 img-area-2">
+                        <div class="img-area">
+                            <img src="images/blog/'.$blog['img'].'" >
+                        </div>
+                    </div>
+                    <div class="col-lg-8" style="padding-top:20px;">
+                        <div class="text-area">
+                            <p class="date"><i class="fa fa-calendar"></i> '.$blog['date'].'</p>
+                            <p class="authore"><i class="fa fa-user"></i> '.$blog['user'].'</p>
+                            <a href="blogdetail?id='.$blog['id'].'"><h1>'. $blog['title'].'</h1></a>
+                            <p class="detial" id="_detial">
+                                      '.$blog['shortdes'].'
+                                      </p>
+                            <a class="btn read-more-btn" href="blogdetail.html?id='.$blog['id'].'">Read More</a></center>
+
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
-    ';
+            ';
   }
 }
 else
@@ -77,8 +82,8 @@ else
 
 $output .= '
 <br />
-<div class="int_blog_pagination">
-  <ul class="pagination">
+<div class="page_link_div" id="pagging">
+  <ul class="pagination justify-content-center  md-5">
               
 ';
 $page_array[] = '';
@@ -138,23 +143,24 @@ for($count = 1; $count < count($page_array); $count++)
   if($page == $page_array[$count])
   {
      $page_link .= '
-    <li class="page-item active">
-      <a class="page-link" href="">'.$page_array[$count].' <span class="sr-only">(current)</span></a>
-    </li>
+     <li class="page-item active" title="Previous">
+        <a class="page-link" href="" >'.$page_array[$count].' <span class="sr-only">(current)</span></a>
+      </li>
+
     ';
 
 
     $previous_id = $page_array[$count] - 1;
     if($previous_id > 0)
     {
-      $previous_link = '<li class="page-item"><a class="page-link" href="javascript:void(0)" data-page_number="'.$previous_id.'"><i class="fa fa-chevron-left"></i>Previous</a></li>';
+      $previous_link = '<li class="page-item"><a class="page-link" href="javascript:void(0)" data-page_number="'.$previous_id.'"><i class="fa fa-chevron-left"></i></a></li>';
 
     }
     else
     {
       $previous_link = '
       <li class="page-item disabled">
-        <a class="page-link" >Previous</a>
+        <a class="page-link" ><i class="fa fa-chevron-left"></i></a>
       </li>
       ';
     }
@@ -163,13 +169,13 @@ for($count = 1; $count < count($page_array); $count++)
     {
       $next_link = '
       <li class="page-item disabled">
-        <a class="page-link" >Next</a>
+        <a class="page-link" ><i class="fa fa-chevron-right"></i></a>
       </li>
         ';
     }
     else
     {
-       $next_link = '<li class="page-item"><a class="page-link" href="javascript:void(0)" data-page_number="'.$next_id.'">Next<i class="fa fa-chevron-right"></i></a></li>';
+       $next_link = '<li class="page-item"><a class="page-link" href="javascript:void(0)" data-page_number="'.$next_id.'"><i class="fa fa-chevron-right"></i></a></li>';
 
      
     }
