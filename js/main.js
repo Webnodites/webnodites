@@ -92,6 +92,18 @@ jQuery(document).ready(function($) {
 		    });
 		  };
 
+
+
+		  $('.accordin').on('click', function(event) {
+
+			    var target = $( $(this).attr('data-toggle') );
+			    var target2 = $(this);
+			    target.toggle();
+			    target2.toggleClass('fa-angle-down fa-angle-up');
+			  
+
+			});
+
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
 	    var container = $(".site-mobile-menu");
@@ -351,14 +363,6 @@ btn.on('click', function(e) {
 	});
 
 
-$('.accordin').on('click', function(event) {
 
-    var target = $( $(this).attr('data-toggle') );
-    var target2 = $(this);
-    target.toggle();
-    target2.toggleClass('fa-angle-down fa-angle-up');
-  
-
-});
 
 });
