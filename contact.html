@@ -109,12 +109,12 @@
             <div>
               <div class="cntbox">
                 <h2 class="cnthead">Email-us</h2>
-                <a class="cnttext" href="#" target="_blank">contact@webnodites.com</a>
+                <a class="cnttext" href="mailto:webnodites@gmail.com" target="_blank">contact@webnodites.com</a>
               </div>
 
               <div class="cntbox">
                 <h2 class="cnthead">Call-us</h2>
-                <p class="cnttext">+91-8500792188</p>
+                <a href="tel:+918500792188" class="cnttext">+91-8500792188</a>
               </div>
 
               <div class="cntbox">
@@ -139,11 +139,11 @@
               <form>
 
               <div class="form-group">
-                <input type="text" name="name" placeholder="Full Name" class="cntinput">
+                <input type="text" name="name" placeholder="Full Name" class="cntinput  only-alpha require form_field">
               </div>
 
               <div class="form-group">
-                <input type="text" name="name" placeholder="Email" class="cntinput">
+                <input type="text" name="name" placeholder="Email" class="cntinput  require form_field">
               </div>
 
               <div class="form-group row">
@@ -370,17 +370,17 @@
                 </div>
 
                 <div class="col-7">
-                  <input type="text" name="contact-info" class="cntinput" placeholder="Phone No.">
+                  <input type="text" name="contact-info" class="cntinput  require form_field only-numeric" placeholder="Phone No.">
                 </div>
                 
               </div>
 
               <div class="form-group">
-                <input type="text" name="subject" class="cntinput" placeholder="Subject">
+                <input type="text" name="subject" class="cntinput  require form_field only-alpha" placeholder="Subject">
               </div>
 
               <div class="form-group">
-                <textarea name=""  placeholder="Text" class="Textarea"></textarea>
+                <textarea name=""  placeholder="Text" class="Textarea  require form_field"></textarea>
               </div>
 
               <div class="form-group">
@@ -415,10 +415,10 @@
             <div class="col-md-3 ml-auto col-12">
               <h2 class="footer-heading ">Social Links</h2>
               <ul class="list-unstyled ulc">
-                <li><a href="#" class="smoothscroll">Facebook</a></li>
-                <li><a href="#" class="smoothscroll">Instagram</a></li>
-                <li><a href="#" class="smoothscroll">LinkedIn</a></li>
-                <li><a href="#" class="smoothscroll">Twitter</a></li>
+                <li><a href="https://www.facebook.com/Webnodites-110977740623699" class="smoothscroll">Facebook</a></li>
+                <li><a href="https://www.instagram.com/webnodites/" class="smoothscroll">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/webnodites/" class="smoothscroll">LinkedIn</a></li>
+                <li><a href="https://twitter.com/webnodites" class="smoothscroll">Twitter</a></li>
               </ul>
             </div>
 
@@ -428,13 +428,13 @@
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="#"><img src="images/gmail.png">contact@webnodites.com</a>
+                      <a href="mailto:webnodites@gmail.com"><img src="images/gmail.png">contact@webnodites.com</a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/whatsapp.png">+91-8500792188</a>
+                      <a href="https://api.whatsapp.com/send?phone=+91-8500792188"><img src="images/whatsapp.png">+91-8500792188</a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/call.png">+91-8500792188</a>
+                      <a href="tel:+918500792188"><img src="images/call.png">+91-8500792188</a>
                     </li>
                   </ul>
                 </div>
@@ -500,7 +500,7 @@
             showCursor: true
             });
             </script>
-  
+  <script src="js/validate.js"></script>
   <script src="js/main.js"></script>
 
   </body>
