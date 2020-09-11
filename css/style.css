@@ -267,9 +267,11 @@ body:after {
         padding-top: 100px;
     }
   }
-
+.site-mobile-menu .site-nav-wrap .cnt:hover {
+     color: #fff; 
+}
   .border-top {
-        padding: 20px 0;
+        padding: 10px 0;
      }
    .border-top p{
     margin:0; 
