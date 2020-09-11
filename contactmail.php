@@ -12,16 +12,16 @@
 <?php
 echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
 
-if(isset($_POST["contact_submit"]))
+if(isset($_POST["submitbtn"]))
 {
 	$name=$_POST["name"];
 	$email=$_POST["email"];
 	$phone=$_POST["phone"];
 	$subject=$_POST["subject"];
-	$msg=$_POST["message"];
+	$msg=$_POST["msg"];
 	
 	$from = "Client Contact";
-	$webmaster = "info@webnodites.com";
+	$webmaster = "webnodites@info.com";
 	$to="webnodites@gmail.com";
 	$sub = $subject;
 
@@ -30,7 +30,8 @@ if(isset($_POST["contact_submit"]))
 	$message .= "Email :".$email."\n";
 	$message .= "Mobile No. :".$phone."\n";
 	$message .= "Message :".$msg."\n";
-
+     
+     echo $message;
 	$sendmail = mail($to,$sub,$message,$header);
 	if($sendmail){
 		echo "<script>swal({
@@ -39,7 +40,7 @@ if(isset($_POST["contact_submit"]))
 				  icon: 'success',
 				  button: 'Ok!',
 				}).then(function(){
-			         window.location.href='index';
+			         window.location.href='index.html';
 			         });
 			   </script>";
 	}
@@ -52,7 +53,7 @@ if(isset($_POST["contact_submit"]))
 				  icon: 'error',
 				  button: 'Ok!',
 				}).then(function(){
-			         window.location.href='contact';
+			         window.location.href='contact.html';
 			         });  
 			</script>";
 
@@ -60,49 +61,5 @@ if(isset($_POST["contact_submit"]))
 
 }
 
-if(isset($_POST["requestcall"]))
-{
-    $name=$_POST["name"];
-	$email=$_POST["email"];
-	$phone=$_POST["mobile"];
-	$msg=$_POST["msg"];
-	
-	$from = "Client Request Call";
-	$webmaster = "info@webnodites.com";
-	$to="webnodites@gmail.com";
-	$sub = "For Web Services";
-
-	$header = "From:".$from."<".$webmaster.">\n";
-	$message = "Name :".$name."\n";
-	$message .= "Email :".$email."\n";
-	$message .= "Mobile No. :".$phone."\n";
-	$message .= "Message :".$msg."\n";
-
-	$sendmail = mail($to,$sub,$message,$header);
-	if($sendmail){
-		echo "<script>swal({
-				  title: 'Thank You!',
-				  text: 'Message Sent Successfully!',
-				  icon: 'success',
-				  button: 'Ok!',
-				}).then(function(){
-			         window.location.href='index';
-			         });
-			</script>";
-	}
-	else{
-		echo "<script>
-			swal({
-				  title: 'Oops!',
-				  text: 'Something Went Wrong!',
-				  icon: 'error',
-				  button: 'Ok!',
-				}).then(function(){
-			         window.location.href='index';
-			         });  
-			</script>";
-
-	}
-}
 
 ?>

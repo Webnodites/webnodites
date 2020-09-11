@@ -1,6 +1,6 @@
  $(document).ready(function () {
 
-            $('.only-alpha').keypress(function (e) {
+        $('.only-alpha').keypress(function (e) {
                 var regex = new RegExp("^[a-zA-Z ]*$");
                 var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
                 if (regex.test(str)) {
@@ -13,7 +13,7 @@
             });
             var numberval = false;
 
-            $(document).ready(function () {
+        $(document).ready(function () {
                 $(".only-numeric").bind("keypress", function (e) {
                     var keyCode = e.which ? e.which : e.keyCode
                  
