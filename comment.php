@@ -23,13 +23,14 @@ if(isset($_POST['readdt']))
      {
    
    	$data = $data.'<li class="comment">
-                   <div class="comment-body">
-                      <h3>'.$cmt['c_name'].'</h3>
-                      <div class="meta mb-3">'.$cmt['time'].'</div>
-                      <p>'.$cmt['c_msg'].'</p>
-                      
-                    </div>
-                  </li>';
+                  
+                  <div class="comment-body">
+                    <h3>'.$cmt['c_name'].'</h3>
+                    <div class="meta">'.$cmt['time'].'</div>
+                    <p>'.$cmt['c_msg'].'</p>
+                  </div>
+                </li>
+        ';
 
 	}
 	echo $data;

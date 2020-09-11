@@ -61,7 +61,7 @@ if($total_data > 0)
                             <p class="detial" id="_detial">
                                       '.$blog['shortdes'].'
                                       </p>
-                            <a class="btn read-more-btn" href="blogdetail.html?id='.$blog['id'].'">Read More</a></center>
+                            <a class="btn read-more-btn" href="blogdetail.php?id='.$blog['id'].'">Read More</a></center>
 
                         </div>
                     </div>

@@ -124,7 +124,7 @@ session_start();
                                      
                        ?>
                           <div class="blogbox">
-                            <a href="blogdetail.html?id=<?php echo $blog['id'];?>">
+                            <a href="blogdetail.php?id=<?php echo $blog['id'];?>">
                               <img src="images/blog/<?php echo $blog['img'];?>" alt="Image" class="img-fluid">
                               <div>
                                 <h2 class="tl"><?php echo substr($blog['title'],0,25);?>...</h2>
