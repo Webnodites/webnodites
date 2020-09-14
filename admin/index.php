@@ -86,8 +86,7 @@ if(isset($_POST["login-btn"]))
 		</div>
 	</div>
 	
-	<script src="../js/jquery/jquery-3.2.1.min.js"></script>
-
+    <script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/login.js"></script>
 
 </body>

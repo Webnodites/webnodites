@@ -24,7 +24,7 @@ a:hover {
 
 .headbar{
   height: 70px;
-  background-color: black;
+  background-color: #000c2d;
   text-align: center;
 }
 .headbar h2{
@@ -48,6 +48,19 @@ button:hover {
 .limiter {
   width: 100%;
   margin: 0 auto;
+      max-height: 100vh;
+    overflow: hidden;
+
+}
+.navbar{
+    background-color: #000c2d;
+}
+h1,h2,h3,h4{
+  color: #000c2d;
+}
+button{
+    background-color: #000c2d;
+    color: #fff;
 }
 .container-login{
   width: 100%;  
@@ -119,13 +132,13 @@ button:hover {
   align-items: center;
   min-width: 150px;
   height: 55px;
-  background-color: cyan;
+  background-color: #000c2d;
   border-radius: 10px;
   float: right;
 }
 
 .form-btn:hover {
-  background-color: black;
+  background-color: #000c2d;
 }
 
 @media (max-width: 576px) {
@@ -168,7 +181,7 @@ form button{
   width: 100px;
 }
 .allblogs table a{
-  color: dodgerblue;
+  color:  #000c2d;
   font-size: 20px;
   text-decoration: none;
 }
