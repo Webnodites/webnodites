@@ -797,9 +797,8 @@ body:after {
   .site-blocks-cover.overflow-hidden {
     overflow: hidden; }
   .site-blocks-cover, .site-blocks-cover > .container > .row {
-        height: calc(40vh);
-    min-height: 250px;
-    padding-top: 50px;
+        height: calc(80vh);
+        min-height: 400px;
   }
   .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
     min-height: 400px;
