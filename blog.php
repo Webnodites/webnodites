@@ -36,7 +36,7 @@ session_start();
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
     
-    <script src="https://use.fontawesome.com/1c4a01632f.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
@@ -125,7 +125,7 @@ session_start();
                        ?>
                           <div class="blogbox">
                             <a href="blogdetail.php?id=<?php echo $blog['id'];?>">
-                              <img src="images/blog/<?php echo $blog['img'];?>" alt="Image" class="img-fluid">
+                              <div class="img" style="background: url(images/blog/<?php echo $blog['img'];?>);background-size: cover;background-repeat: no-repeat;    background-position: center;"></div>
                               <div>
                                 <h2 class="tl"><?php echo substr($blog['title'],0,25);?>...</h2>
                                 <p class="dt"><i class="fa fa-calendar"></i><?php echo $blog['date'];?></p>
@@ -150,28 +150,7 @@ session_start();
         </div>
 
         <div id="dynamic_content">
-            <div class="blog_section" id="blog" >
-              <div class="blog-inner">
-                <div class="row">
-                    <div class="col-lg-4 img-area-2">
-                        <div class="img-area">
-                            <img src="images/t.jpg" >
-                        </div>
-                    </div>
-                    <div class="col-lg-8" style="padding-top:20px;">
-                        <div class="text-area">
-                            <p  class="date">11-07-2020 <span class="time"> 11:27:05pm</span></p>
-                            <p class="authore">Shahab Hashmi</p>
-                            <p><h1>How To Use CodePen Components Inside Your Webpage?</h1></p>
-                            <p class="detial" id="_detial">
-                                      With the world rapidly evolving by the minute, staying on top of the in-demand skills’ curve is a voluminous task. Web Development is one such skill that is almost essential to the modern developer.  </p>
-                            <a class="btn read-more-btn" href="single.html">Read More</a></center>
-
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
+            
         </div>
       </div>
     </section>
@@ -180,7 +159,7 @@ session_start();
 <footer >
       <div class="site-footer" >
         <div class="container">
-          <div class="row">
+          <div class="row main-row">
             <div class="col-lg-4 col-md-3 col-12">
               <h2 class="footer-heading ">Quick Links</h2>
               <ul class="list-unstyled ulc">
@@ -269,7 +248,7 @@ session_start();
   
   <script src="js/blog.js"></script>
   <script src="js/main.js"></script>
-<script>
+ <script>
   $(document).ready(function(){
 
    
@@ -290,7 +269,43 @@ session_start();
     }
     load_data(1);
 
+    $(document).on('click', '.page-link', function(){
+      var page = $(this).data('page_number');
+      var query = $('#search_box').val();
+      load_data(page, query);
+    });
+
+    $('#search_box').keyup(function(){
+      var query = $('#search_box').val();
+      load_data(1, query);
+    });
     
+     $(document).on('click', '#app', function(){
+      var query = $('#app').val();
+      console.log(query);
+      load_data(1, query);
+     });
+
+     $(document).on('click', '#education', function(){
+      var query = $('#education').val();
+      console.log(query);
+      load_data(1, query);
+     });
+     $(document).on('click', '#web', function(){
+      var query = $('#web').val();
+      console.log(query);
+      load_data(1, query);
+     });
+     $(document).on('click', '#cloud', function(){
+      var query = $('#cloud').val();
+      console.log(query);
+      load_data(1, query);
+     });
+     $(document).on('click', '#software', function(){
+      var query = $('#software').val();
+      console.log(query);
+      load_data(1, query);
+     });
 
   });
 </script>

@@ -48,20 +48,21 @@ if($total_data > 0)
             <div class="blog_section" id="blog" >
               <div class="blog-inner">
                 <div class="row">
-                    <div class="col-lg-4 img-area-2">
+                    <div class="col-lg-5 img-area-2">
                         <div class="img-area">
-                            <img src="images/blog/'.$blog['img'].'" >
+                            <div class="img" style="background:url(images/blog/'.$blog['img'].');background-size: cover;background-repeat: no-repeat;    background-position: center;"></div>
                         </div>
                     </div>
-                    <div class="col-lg-8" style="padding-top:20px;">
+                    <div class="col-lg-7" style="padding-top:20px;">
                         <div class="text-area">
                             <p class="date"><i class="fa fa-calendar"></i> '.$blog['date'].'</p>
                             <p class="authore"><i class="fa fa-user"></i> '.$blog['user'].'</p>
-                            <a href="blogdetail?id='.$blog['id'].'"><h1>'. $blog['title'].'</h1></a>
+                            <a href="blogdetail.php?id='.$blog['id'].'"><h1>'. $blog['title'].'</h1></a>
                             <p class="detial" id="_detial">
                                       '.$blog['shortdes'].'
                                       </p>
-                            <a class="btn read-more-btn" href="blogdetail.php?id='.$blog['id'].'">Read More</a></center>
+                            <a class="btn read-more-btn" href="blogdetail.php?id='.$blog['id'].'">Read More
+                            </a>
 
                         </div>
                     </div>

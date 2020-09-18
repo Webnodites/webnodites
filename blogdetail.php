@@ -33,7 +33,7 @@ date_default_timezone_set('Asia/Kolkata');
 
     <link rel="stylesheet" href="css/aos.css">
 
-    <script src="https://use.fontawesome.com/1c4a01632f.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
     
@@ -106,7 +106,7 @@ date_default_timezone_set('Asia/Kolkata');
             <div class="row all">
               <div class="col-lg-11">
 
-                <h1><?php echo $blog['title'];?></h1>
+                <h2 class="blogt"><?php echo $blog['title'];?></h2>
               </div>
               
             </div>
@@ -151,7 +151,8 @@ date_default_timezone_set('Asia/Kolkata');
               
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">Leave a comment</h3>
-                <form action="#" class="">
+                <input type="hidden" class="form-control" id="bid" value="<?php echo $blog['id'];?>">
+                <form >
                   <input type="hidden" class="form-control" id="date" value="<?php echo date('Y-m-d')." "; echo date("h:i:sa"); ?>" readonly>
 
                   <div class="form-group">
@@ -178,19 +179,27 @@ date_default_timezone_set('Asia/Kolkata');
 
           </div>
           <div class="col-md-4 sidebar">
+            <div class="int_heading slider-title">
+                <h4>About Author</h4>  
+             </div>
             
-            
-            <div class="sidebar-box">
-              <img src="images/bloguser/<?php echo $blog['userimg'];?>" alt="Image placeholder" class="img-fluid mb-4">
-              <h3><?php echo $blog['user'];?></h3>
+            <div class="sidebar-box author">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/bloguser/<?php echo $blog['userimg'];?>" alt="Image placeholder" class="img-fluid mb-4">
+
+                </div>
+                <div class="col-8">
+                   <h3><?php echo $blog['user'];?></h3>
+                </div>
+              </div>
               <p><?php echo $blog['userdes'];?></p>
              
             </div>
               
             <div class="int_heading slider-title">
                 <h4>Recent Blogs</h4>  
-
-            </div>
+             </div>
              <?php
                 $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
                 $rs = mysqli_query($con,$qy);
@@ -218,33 +227,48 @@ date_default_timezone_set('Asia/Kolkata');
 <footer >
       <div class="site-footer" >
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-12">
-              <h2 class="footer-heading ">Quick Links</h2>
-              <ul class="list-unstyled ulc">
-                <li><a href="index.html" class="smoothscroll">Home</a></li>
-                <li><a href="who_we_are.html" class="smoothscroll">Who We Are</a></li>
-                <li><a href="services.html" class="smoothscroll">Services</a></li>
-                <li><a href="portfolio.html" class="smoothscroll">Portfolio</a></li>
-                <li><a href="blog.html" class="smoothscroll">Blogs</a></li>
-                <li><a href="contact.html" class="smoothscroll">Contact Us</a></li>
-              </ul>
+          <div class="row main-row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <h2 class="footer-heading ">Recent Blogs</h2>
+              <ul class="list-unstyled ulc blg">
+                <?php
+                $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
+                $rs = mysqli_query($con,$qy);
+                foreach ($rs as $blg) {
+                ?>
+                <li>
+                  <a href="blogdetail.php?id=<?php echo $blg['id'];?>">
+                    <div class="row">
+                      <div class="col-3"><div class="img" style="background: url(images/blog/<?php echo $blg['img'];?>);
+                          background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
+                      </div>
+                        <div class="col-9"><h3><?php echo $blg['title'];?></h3></div>
+                      </div>
+                    </a>
+                  </li>
+                  <?php
+
+                  }
+                 ?>
+                  
+                  
+                
             </div>
 
 
-            <div class="col-md-3 ml-auto col-12">
-              <h2 class="footer-heading ">Social Links</h2>
-              <ul class="list-unstyled ulc">
-                <li><a href="#" class="smoothscroll">Facebook</a></li>
-                <li><a href="#" class="smoothscroll">Instagram</a></li>
-                <li><a href="#" class="smoothscroll">LinkedIn</a></li>
-                <li><a href="#" class="smoothscroll">Twitter</a></li>
+            <div class="col-lg-3 col-md-3 ml-auto col-12">
+              <h2 class="footer-heading ">Connect With Us</h2>
+              <ul class="list-unstyled ulc social">
+                <li><a href="#" class="smoothscroll"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="#" class="smoothscroll"><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href="#" class="smoothscroll"><i class="fa fa-instagram"></i>Instagram</a></li>
+                <li><a href="#" class="smoothscroll"><i class="fa fa-twitter"></i>Twitter</a></li>
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-5 col-10">
+            <div class="col-lg-4 col-md-4 col-10">
               <div class="mb-5">
-                <h2 class="footer-heading1">Contact Us</h2>
+                <h2 class="footer-heading1">Contact Info</h2>
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
@@ -317,7 +341,66 @@ date_default_timezone_set('Asia/Kolkata');
             showCursor: true
             });
             </script>
-  
+  <script type="text/javascript">
+  $(document).ready(function(){
+          readdata();
+});
+
+   function readdata(){
+         var readdt = "readdt";
+          var bid = $('#bid').val();
+         $.ajax({
+          url: 'comment.php',
+          type: 'POST',
+          data: {
+            readdt : readdt,
+             bid : bid
+          },
+
+          success : function(data,status){
+            $('#comments').empty();
+            console.log(data);
+            $('#comments').html(data);
+          }
+         });
+
+
+  }
+
+
+  function adddata(){
+    var name = $('#name').val();
+    var msg = $('#message').val();
+    var email = $('#email').val();
+    var bid = $('#bid').val();
+    var date = $('#date').val();
+    
+    console.log(name);
+    console.log(msg);
+    console.log(email);
+    console.log(bid);
+    console.log(date);
+
+    $.ajax({
+      url: 'comment.php',
+      type: 'POST',
+      data: {
+        name :name,
+        msg : msg,
+        email : email,
+        bid : bid,
+        date : date,
+      },
+
+      success : function(data,status){
+        $('#name').val('');
+        $('#message').val('');
+        $('#email').val('');
+        readdata();
+      }
+    });
+  }
+</script>  
   <script src="js/main.js"></script>
 
   
