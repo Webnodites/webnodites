@@ -87,7 +87,7 @@ padding: 0px 40px;
 
 }
 .visit-btn1:hover{
-  color: white;
+   color: #cec7c7;
   background-color:  #000c2d ;
 }
 .main-head{
@@ -138,9 +138,10 @@ padding: 0px 40px;
     color: white;
     text-decoration: none;
 }
+
 .live-btn:hover{
   text-decoration: none;
-  color: white;
+   color: #cec7c7;
 }
 .a-liitle-about-it 
 {

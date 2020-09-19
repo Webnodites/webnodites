@@ -77,14 +77,14 @@ date_default_timezone_set('Asia/Kolkata');
                 <li><a href="who_we_are.html" class="nav-link nrl">Who We Are</a></li>
                 <li><a href="services.html" class="nav-link nrl">Services</a></li>
                 <li><a href="portfolio.html" class="nav-link nrl">Portfolio</a></li>
-                <li><a href="blog.html" class="nav-link nrl">Blogs</a></li>
+                <li><a href="blog.html" class="nav-link nrl active">Blogs</a></li>
                 <li><a href="contact.html" class="nav-link cnt">Contact</a></li>
               </ul>
             </nav>
           </div>
 
 
-          <div class="col-md-4 col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-md-8 col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>

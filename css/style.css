@@ -121,6 +121,9 @@ video{
     color: white;
     padding: 10px 40px;
 }
+.prj .touch-btn:hover{
+   color: #cec7c7;
+}
 
 ::-moz-selection {
   background: #000;
@@ -135,7 +138,9 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #cec7c7;
+     }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {}
@@ -321,7 +326,7 @@ body:after {
 
 
     .site-footer a:hover {
-      color: white; }
+      color: #cec7c7; }
   .ulc li {
     margin-bottom: 10px; 
    text-align: center;
@@ -506,7 +511,8 @@ body:after {
         padding: 30px 20px;
         color: #000923;
         display: inline-block;
-        text-decoration: none !important; }
+        text-decoration: none !important;
+         }
 
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #000c2d; }
@@ -659,14 +665,47 @@ body:after {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: #212529;
+       }
       .site-mobile-menu .site-nav-wrap .cnt {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #fff; }
+      color: #fff; 
+    }
+    @media(max-width: 991px){
+        .site-mobile-menu .site-nav-wrap .cnt {
+           padding: 10px 20px;
+            display: block;
+            position: relative;
+            color: #212529;
+            background: none;
+        }
+        .site-mobile-menu .site-nav-wrap .nrl.active {
+              padding: 4px 25px;
+              width: fit-content;
+              display: block;
+              position: relative;
+              color: #fff;
+              border-radius: 21px;
+              background-color: #000c2d;
+              text-decoration: none !important;
+        }
+        .site-mobile-menu .site-nav-wrap .cnt.active {
+              padding: 4px 25px;
+              width: fit-content;
+              display: block;
+              position: relative;
+              color: #fff;
+              border-radius: 21px;
+              background-color: #000c2d;
+              text-decoration: none !important;
+        }
+    }
+
       .site-mobile-menu .site-nav-wrap a:hover {
         color: #000c2d; }
+    }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
@@ -754,8 +793,14 @@ body:after {
     .sticky-wrapper .site-navbar .site-menu > li > .cnt:hover, .sticky-wrapper .site-navbar .site-menu > li > .cnt.active {
       color: white; }
 
-      .sticky-wrapper .site-navbar .site-menu > li > .nrl:hover, .sticky-wrapper .site-navbar .site-menu > li > .nrl.active {
-      color: #000c2d; }
+      .sticky-wrapper .site-navbar .site-menu > li > .nrl:hover {
+              color: #7c7e83;
+       }
+       .sticky-wrapper .site-navbar .site-menu > li > .nrl.active{
+         color: #041546;
+          font-weight: 500;
+          font-size: 18px;
+       }
   .sticky-wrapper.is-sticky .site-navbar {
     background: #fff;
     border-bottom: 1px solid transparent;
@@ -772,8 +817,14 @@ body:after {
       color: white ;
           padding: 5px 20px;
            }
-      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .nrl:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .nrl.active {
-        color: #000923 !important; }
+      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .nrl:hover{
+               color: #7c7e83;
+         }
+          .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .nrl.active {
+            color: #041546;
+            font-weight: 500;
+            font-size: 18px;
+          }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt.active {
         color: white !important; }
   .sticky-wrapper .shrink {
@@ -819,12 +870,12 @@ body:after {
     .site-blocks-cover .intro-text {
       margin-top: 30%; } }
   .site-blocks-cover h1 {
-    font-size: 55px;
+        font-size: 70px;
     color: #000c2d;
     font-weight: 700; }
     @media (max-width: 991.98px) {
       .site-blocks-cover h1 {
-        font-size: 2rem; } }
+        font-size:45px; } }
 
     @media (max-width: 767px){
       .site-blocks-cover h1 {
