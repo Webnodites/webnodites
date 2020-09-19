@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
             items:1
         },
         600:{
+            nav:false,
             items:1
         },
         1000:{

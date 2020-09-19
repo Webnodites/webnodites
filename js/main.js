@@ -179,7 +179,7 @@ jQuery(document).ready(function($) {
 	        	margin: 20,
 	        	stagePadding: 0,
 	        	nav: true,
-	          items: 3
+	            items: 3
 	        }
 		    }
 			});
@@ -198,7 +198,26 @@ jQuery(document).ready(function($) {
 	    nav: true,
 	    dots:false,
 	    smartSpeed:1000,
-	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">'],
+        responsive:{
+	        600:{
+	        	margin: 0,
+	        	nav: true,
+	          items: 1
+	        },
+	        1000:{
+	        	margin: 0,
+	        	nav: true,
+	            items: 1
+	        },
+	        1200:{
+	        	margin: 0,
+	        	nav: true,
+	            items: 1
+	        }
+		    }
+
+
 	  });
 
 	  

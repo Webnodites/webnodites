@@ -3,6 +3,7 @@ html {
   overflow-x: hidden; }
 
 body {
+      overflow-x: hidden;
   line-height: normal;
   color: gray;
   font-weight: 400;
@@ -24,7 +25,7 @@ video{
 }
 @media (max-width: 991px) {
   video{
-    height: 345px;
+    height: 315px;
 
 }
 }
@@ -208,7 +209,8 @@ body:after {
   border-color: transparent; }
 
 .site-section {
-  padding: 2.5em 0; }
+  padding:50px 0;
+   }
   @media (min-width: 768px) {
     .site-section {
       padding: 5em 0; } }
@@ -805,9 +807,15 @@ body:after {
     height: calc(20vh); }
   @media (max-width: 991.98px) {
     .site-blocks-cover, .site-blocks-cover > .container > .row {
-    height: auto;
-    min-height: 175px; }
-   
+        height: auto;
+    min-height: 385px;
+     }
+   @media (max-width: 767px){
+    .site-blocks-cover, .site-blocks-cover > .container > .row {
+        height: auto;
+        min-height: 350px;
+    }
+  }
     .site-blocks-cover .intro-text {
       margin-top: 30%; } }
   .site-blocks-cover h1 {
@@ -817,6 +825,13 @@ body:after {
     @media (max-width: 991.98px) {
       .site-blocks-cover h1 {
         font-size: 2rem; } }
+
+    @media (max-width: 767px){
+      .site-blocks-cover h1 {
+          font-size: 22px;
+      }
+    }
+
   @media (max-width: 991.98px) {
     .site-blocks-cover .cover-img {
       max-width: 400px;
@@ -1071,14 +1086,28 @@ body:after {
         transform: translate(-50%, -50%); }
     .owl-style .owl-nav .owl-prev {
       left: -50px; }
+
       @media (max-width: 991.98px) {
         .owl-style .owl-nav .owl-prev {
-          left: 10px; } }
+         left: -15px;
+        }
+          }
     .owl-style .owl-nav .owl-next {
       right: -50px; }
+
       @media (max-width: 991.98px) {
         .owl-style .owl-nav .owl-next {
-          right: 10px; } }
+              right: -15px; 
+            }
+              .owl-style .owl-nav {
+            opacity: 1;
+            visibility: visible;
+            }
+        .owl-style .owl-nav .owl-prev > span, .owl-style .owl-nav .owl-next > span {
+            color: #000d31;
+            font-size: 30px;
+            }
+ }
   .owl-style:hover .owl-nav, .owl-style:focus .owl-nav {
     opacity: 1;
     visibility: visible; }
@@ -1241,6 +1270,14 @@ body:after {
 
 .overlap-left {
   margin-left: -100px; }
+
+
+  @media (max-width: 767px){
+.owl-style .owl-nav .owl-prev > span, .owl-style .owl-nav .owl-next > span {
+    color: #000d31;
+    font-size: 25px;
+}
+}
   @media (max-width: 991.98px) {
     .overlap-left {
       margin-left: 0px; } }
@@ -2269,6 +2306,10 @@ figure figcaption {
   .sc li img {
     padding-right: 10px;
   }
+  .mission-title {
+    font-size: 30px;
+     padding-right: 0px;
+   }
 }
 @media (max-width: 767px) {
   .mission-title {
@@ -2285,33 +2326,32 @@ figure figcaption {
     font-size: 25px;
   }
   .testmh2 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: normal;
+    letter-spacing: normal;
   }
   .testimony {
-      padding: 40px 25px;
+      padding: 25px 25px;
   }
   .block-testimony-1 .f h4{
-  font-size: 18px;
+  font-size: 16px;
   }
   .block-testimony-1 .f h3{
-  font-size: 18px;
+      font-size: 12px;
   }
   .block-testimony-1 figure{
  
-   width: 100px;
+       width: 90px;
   }
   .block-testimony-1 figure img{
     border-radius: 30px;
    }
    .block-testimony-1 .l p {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 15px;
-    letter-spacing: 1.4px;
+    letter-spacing: normal;
   }
-  .owl-nav{
-    display: none;
-  }
+  
   .prj h1{
   font-size: 25px;
   }
@@ -2325,7 +2365,7 @@ figure figcaption {
   }
 
   .site-footer a {
-    font-size: 14px;
+        font-size: 13px;
   }
   .footer-heading1 {
     font-size: 50px;
@@ -2335,14 +2375,20 @@ figure figcaption {
   }
   .border-top p {
     margin: 0;
-    font-size: 10px;
+    font-size: 8px;
   }
-
+  
 
 }
 @media (max-width: 420px) {
 .footer-heading1 {
-    font-size: 40px;
+   
+    font-size: 30px;
+
+}
+.process p {
+    font-size: 12px;
+    text-align: left;
 }
 .sc li img {
     padding-right: 20px;
