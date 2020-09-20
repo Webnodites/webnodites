@@ -196,6 +196,11 @@ padding: 0px 40px;
   .Name-of-Project {
     font-size: 22px;
   }
+  .visit-btn1 {
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+    }
 }
 
 

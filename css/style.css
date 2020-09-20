@@ -790,8 +790,12 @@ body:after {
     color: #000923; }
   .sticky-wrapper .site-navbar .site-menu > li > .nrl {
     color: #000923 }
-    .sticky-wrapper .site-navbar .site-menu > li > .cnt:hover, .sticky-wrapper .site-navbar .site-menu > li > .cnt.active {
-      color: white; }
+  .sticky-wrapper .site-navbar .site-menu > li > .cnt:hover{
+         color: #cec7c7;
+    }
+  .sticky-wrapper .site-navbar .site-menu > li > .cnt.active {
+      color: #fff;
+    }
 
       .sticky-wrapper .site-navbar .site-menu > li > .nrl:hover {
               color: #7c7e83;
@@ -825,8 +829,14 @@ body:after {
             font-weight: 500;
             font-size: 18px;
           }
-        .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt.active {
-        color: white !important; }
+    .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt:hover{
+            color: #cec7c7;
+
+         }
+     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt.active {
+        color: white !important;
+
+         }
   .sticky-wrapper .shrink {
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
@@ -2507,3 +2517,68 @@ figure figcaption {
     font-size: 16px;
  }
 }
+
+
+
+#gallery-section .dv{
+  padding-top:50px;
+}
+.simg{
+ padding: 30px 40px;
+ min-height: 400px;
+}
+.bimg{
+padding: 0px 40px;
+ min-height: 400px;
+}
+.visit-btn1{
+  position: absolute;
+    bottom: 63px;
+    left: 93px;
+    padding: 0px 30px;
+    border-radius: 22px;
+    border: solid 0.5px #000e35;
+    background-color: #000c2d;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2.07px;
+    text-align: left;
+    color: white;
+}
+.visit-btn1:focus{
+  outline: none;
+  background-color: white ;
+   color: #000c2d;
+
+}
+.visit-btn1:hover{
+   color: #cec7c7;
+  background-color:  #000c2d ;
+}
+/*tablets*/
+@media(max-width: 991px){
+.simg {
+    padding: 20px 0px;
+    min-height: 300px;
+}
+ .bimg {
+    padding: 0px 0px;
+    min-height: 325px;
+}
+}
+/*large mobiles*/
+@media(max-width: 767px){
+  .simg {
+    padding: 30px 0px;
+    min-height: 325px;
+}
+ .bimg {
+    padding: 0px 0px;
+    min-height: 325px;
+}
+.visit-btn1 {
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+    }
+  }
