@@ -55,12 +55,21 @@
 
 
 /*starting portfolio page style*/
+@media (max-width: 767px){
+  .gal-item {
+    margin: 10px 0;
+  }
+}
+.ssubimg{
+  height: 100%;
+  width: 100%;
+}
 #gallery-section{
   padding:50px 0;
 }
 .simg{
- padding: 30px 40px;
- min-height: 400px;
+     padding: 0px 15px;
+    min-height: 300px;
 }
 .bimg{
 padding: 0px 40px;
@@ -89,6 +98,14 @@ padding: 0px 40px;
 .visit-btn1:hover{
    color: #cec7c7;
   background-color:  #000c2d ;
+}
+@media(max-width: 991px){
+  .visit-btn1 {
+    bottom: 20px;
+    left: 20px;
+    padding: 0px 20px;
+    font-size: 14px;
+  }
 }
 .main-head{
   font-size: 35px;
@@ -158,8 +175,8 @@ padding: 0px 40px;
 /*tablets*/
 @media(max-width: 991px){
 .simg {
-    padding: 20px 0px;
-    min-height: 300px;
+    padding: 0px 10px;
+    min-height: 175px;
 }
  .bimg {
     padding: 0px 0px;
@@ -169,8 +186,8 @@ padding: 0px 40px;
 /*large mobiles*/
 @media(max-width: 767px){
   .simg {
-    padding: 30px 0px;
-    min-height: 325px;
+   padding: 30px 10px;
+    min-height: 305px;
 }
  .bimg {
     padding: 0px 0px;
@@ -204,7 +221,12 @@ padding: 0px 40px;
     }
 }
 
-
+@media(max-width: 400px){
+    .simg {
+   padding: 30px 10px;
+    min-height: 235px;
+}
+}
 
 
 /*end portfolio page style */

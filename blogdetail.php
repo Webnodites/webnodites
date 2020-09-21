@@ -224,7 +224,7 @@ date_default_timezone_set('Asia/Kolkata');
 
     <?php } ?>
 
-<footer >
+    <footer >
       <div class="site-footer" >
         <div class="container">
           <div class="row main-row">
@@ -259,10 +259,13 @@ date_default_timezone_set('Asia/Kolkata');
             <div class="col-lg-3 col-md-3 ml-auto col-12">
               <h2 class="footer-heading ">Connect With Us</h2>
               <ul class="list-unstyled ulc social">
-                <li><a href="#" class="smoothscroll"><i class="fa fa-linkedin"></i> Linkedin</a></li>
-                <li><a href="#" class="smoothscroll"><i class="fa fa-facebook"></i>Facebook</a></li>
-                <li><a href="#" class="smoothscroll"><i class="fa fa-instagram"></i>Instagram</a></li>
-                <li><a href="#" class="smoothscroll"><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/webnodites/" class="smoothscroll"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+
+                <li><a href="https://www.facebook.com/Webnodites-110977740623699" class="smoothscroll"><i class="fa fa-facebook"></i>Facebook</a></li>
+
+                <li><a href="https://www.instagram.com/webnodites/" class="smoothscroll"><i class="fa fa-instagram"></i>Instagram</a></li>
+                
+                <li><a href="https://twitter.com/webnodites" class="smoothscroll"><i class="fa fa-twitter"></i>Twitter</a></li>
               </ul>
             </div>
 
@@ -272,13 +275,13 @@ date_default_timezone_set('Asia/Kolkata');
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="#"><img src="images/gmail.png">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png">contact@webnodites.com</a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/whatsapp.png">+91-8500792188</a>
+                      <a href="https://api.whatsapp.com/send?phone=+91-8500792188"><img src="images/whatsapp.png">+91-8500792188</a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/call.png">+91-8500792188</a>
+                      <a href="tel:+918500792188"><img src="images/call.png">+91-8500792188</a>
                     </li>
                   </ul>
                 </div>
