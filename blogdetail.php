@@ -66,7 +66,8 @@ date_default_timezone_set('Asia/Kolkata');
         <div class="row align-items-center">
           
           <div class="col-6 col-md-4 col-lg-2">
-            <div class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="images/logo/logo.png"></a></div>
+            <div class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">
+              <img src="images/logo/logo.png" alt="logo"></a></div>
           </div>
 
           <div class="col-12 col-md-8 col-lg-10 d-none d-xl-block">
@@ -125,7 +126,7 @@ date_default_timezone_set('Asia/Kolkata');
 
             <div class="row mb-5">
               <div class="col-lg-12">
-                <img src="images/blog/<?php echo $blog['img'];?>" alt="" class="img-fluid">
+                <img src="images/blog/<?php echo $blog['img'];?>" alt="Blog Image" class="img-fluid">
                   
               </div>
               
@@ -186,7 +187,7 @@ date_default_timezone_set('Asia/Kolkata');
             <div class="sidebar-box author">
               <div class="row">
                 <div class="col-4">
-                  <img src="images/bloguser/<?php echo $blog['userimg'];?>" alt="Image placeholder" class="img-fluid mb-4">
+                  <img src="images/bloguser/<?php echo $blog['userimg'];?>" alt="Athor Image" class="img-fluid mb-4">
 
                 </div>
                 <div class="col-8">
@@ -207,7 +208,7 @@ date_default_timezone_set('Asia/Kolkata');
                 ?>
                 <div class="sidebar-box">
                  <a href="blogdetail.php?id=<?php echo $blg['id'];?>">
-                  <img src="images/blog/<?php echo $blg['img'];?>" alt="Image placeholder" class="img-fluid mb-4">
+                  <img src="images/blog/<?php echo $blg['img'];?>" alt="blog" class="img-fluid mb-4">
                   <h3><?php echo $blg['title'];?></h3>
                   </a>
                   <p><i class="fa fa-calendar"></i> <?php echo $blog['date'];?></p>
@@ -275,13 +276,14 @@ date_default_timezone_set('Asia/Kolkata');
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
                     </li>
                     <li>
-                      <a href="https://api.whatsapp.com/send?phone=+91-8500792188"><img src="images/whatsapp.png">+91-8500792188</a>
+                      <a href="https://api.whatsapp.com/send?phone=+91-8500792188">
+                        <img src="images/whatsapp.png" alt="whatsapp">+91-8500792188</a>
                     </li>
                     <li>
-                      <a href="tel:+918500792188"><img src="images/call.png">+91-8500792188</a>
+                      <a href="tel:+918500792188"><img src="images/call.png" alt="phone">+91-8500792188</a>
                     </li>
                   </ul>
                 </div>
