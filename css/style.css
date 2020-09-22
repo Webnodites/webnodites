@@ -2529,7 +2529,7 @@ figure figcaption {
  min-height: 400px;
 }
 .ssubimg:hover{
-  opacity: 0.5;
+  opacity: 0.8  ;
 }
 .bimg{
 padding: 0px 40px;
