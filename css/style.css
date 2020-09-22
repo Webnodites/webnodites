@@ -2559,30 +2559,44 @@ padding: 0px 40px;
    color: #7c7b79;;
   background-color:  #000c2d ;
 }
+.ssubimg{
+  height: 100%;
+  width: 100%;
+}
+
+.simg{
+     padding: 0px 15px;
+    min-height: 300px;
+}
+
+
 /*tablets*/
 @media(max-width: 991px){
 .simg {
-    padding: 20px 0px;
-    min-height: 300px;
+    padding: 0px 10px;
+    min-height: 175px;
 }
- .bimg {
-    padding: 0px 0px;
-    min-height: 325px;
-}
+
 }
 /*large mobiles*/
 @media(max-width: 767px){
   .simg {
-    padding: 30px 0px;
-    min-height: 325px;
+      padding: 30px 10px;
+    min-height: 305px;
 }
- .bimg {
-    padding: 0px 0px;
-    min-height: 325px;
-}
+
 .visit-btn1 {
     position: absolute;
     bottom: 45px;
     left: 35px;
     }
+    .gal-item {
+    margin: 10px 0;
+}
+}
+@media (max-width: 400px){
+  .simg {
+      padding: 30px 10px;
+      min-height: 255px;
   }
+}
