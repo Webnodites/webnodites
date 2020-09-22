@@ -53,10 +53,10 @@
      }
   }
 
-  .owl-style .owl-nav .owl-next{
+  .cat-slider .owl-style .owl-nav .owl-next{
     margin-top: -50px;
   }
-  .owl-style .owl-nav .owl-prev{
+  .cat-slider .owl-style .owl-nav .owl-prev{
     margin-top: -50px;
   }
 /*starting portfolio page style*/
@@ -735,7 +735,9 @@ option{
   }
 }
 
-
+.choose{
+      padding-top: 30px;
+}
 /* start about as*/
 .first_section,.second_section,.fourth_section,.third_section{
   padding: 50px 0;
