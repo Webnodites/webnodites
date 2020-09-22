@@ -122,7 +122,7 @@ video{
     padding: 10px 40px;
 }
 .prj .touch-btn:hover{
-   color: #cec7c7;
+   color: #7c7b79;
 }
 
 ::-moz-selection {
@@ -139,7 +139,7 @@ a {
   transition: .3s all ease; }
   a:hover {
     text-decoration: none;
-    color: #cec7c7;
+    color: #7c7b79;;
      }
 
 h1, h2, h3, h4, h5,
@@ -326,7 +326,7 @@ body:after {
 
 
     .site-footer a:hover {
-      color: #cec7c7; }
+      color: #7c7b79; }
   .ulc li {
     margin-bottom: 10px; 
    text-align: center;
@@ -791,7 +791,7 @@ body:after {
   .sticky-wrapper .site-navbar .site-menu > li > .nrl {
     color: #000923 }
   .sticky-wrapper .site-navbar .site-menu > li > .cnt:hover{
-         color: #cec7c7;
+         color: #7c7b79;;
     }
   .sticky-wrapper .site-navbar .site-menu > li > .cnt.active {
       color: #fff;
@@ -830,7 +830,7 @@ body:after {
             font-size: 18px;
           }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt:hover{
-            color: #cec7c7;
+            color: #7c7b79;;
 
          }
      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt.active {
@@ -2528,6 +2528,9 @@ figure figcaption {
  padding: 30px 40px;
  min-height: 400px;
 }
+.ssubimg:hover{
+  opacity: 0.5;
+}
 .bimg{
 padding: 0px 40px;
  min-height: 400px;
@@ -2553,7 +2556,7 @@ padding: 0px 40px;
 
 }
 .visit-btn1:hover{
-   color: #cec7c7;
+   color: #7c7b79;;
   background-color:  #000c2d ;
 }
 /*tablets*/
