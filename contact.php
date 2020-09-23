@@ -1,4 +1,5 @@
 <?php
+$con=mysqli_connect("localhost","root","","webnodites");
 session_start();
 $sname = $_GET['sub'];
 ?>
@@ -63,7 +64,7 @@ $sname = $_GET['sub'];
         <div class="row align-items-center">
           
           <div class="col-6 col-md-4 col-lg-2">
-            <div class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">
+            <div class="mb-0 site-logo"><a href="index" class="h2 mb-0">
               <img src="images/logo/logo.png" alt="logo"></a></div>
           </div>
 
@@ -71,12 +72,12 @@ $sname = $_GET['sub'];
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link nrl">Home</a></li>
-                <li><a href="who_we_are.html" class="nav-link nrl">Who We Are</a></li>
-                <li><a href="services.html" class="nav-link nrl">Services</a></li>
-                <li><a href="portfolio.html" class="nav-link nrl">Portfolio</a></li>
-                <li><a href="blog.html" class="nav-link nrl">Blogs</a></li>
-                <li><a href="contact.html" class="nav-link cnt active">Contact</a></li>
+                <li><a href="index" class="nav-link nrl">Home</a></li>
+                <li><a href="who_we_are" class="nav-link nrl">Who We Are</a></li>
+                <li><a href="services" class="nav-link nrl">Services</a></li>
+                <li><a href="portfolio" class="nav-link nrl">Portfolio</a></li>
+                <li><a href="blog" class="nav-link nrl">Blogs</a></li>
+                <li><a href="contact?sub=For Enquiry" class="nav-link cnt active">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -144,7 +145,7 @@ $sname = $_GET['sub'];
               <div  class="Say-directly">
                 <p align="center">Say directly</p>
               </div>
-              <form action="contactmail.php" method="post" name="cform" onsubmit="validate();">
+              <form action="contactmail" method="post" name="cform" onsubmit="validate();">
 
                 <div class="form-group">
                   <input type="text" name="name" placeholder="Full Name" class="cntinput  only-alpha require form_field" required>
@@ -416,7 +417,7 @@ $sname = $_GET['sub'];
                 foreach ($rs as $blg) {
                 ?>
                 <li>
-                  <a href="blogdetail.php?id=<?php echo $blg['id'];?>">
+                  <a href="blogdetail?id=<?php echo $blg['id'];?>">
                     <div class="row">
                       <div class="col-3"><div class="img" style="background: url(images/blog/<?php echo $blg['img'];?>);
                           background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
@@ -458,10 +459,10 @@ $sname = $_GET['sub'];
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">
-                        <img src="images/whatsapp.png" alt="whatsapp">+91-8500792188</a>
+                        <img src="images/whatsapp.png" alt="whatsapp">+91 850 079 2188</a>
                     </li>
                     <li>
-                      <a href="tel:+918500792188"><img src="images/call.png" alt="phone">+91-8500792188</a>
+                      <a href="tel:+918500792188"><img src="images/call.png" alt="phone">+91 850 079 2188</a>
                     </li>
                   </ul>
                 </div>
