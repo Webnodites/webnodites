@@ -52,6 +52,10 @@
       min-height: 150px;
      }
   }
+  .cat-slider{
+    margin-bottom: 3%;
+  }
+
 
   .cat-slider .owl-style .owl-nav .owl-next{
     margin-top: -50px;
