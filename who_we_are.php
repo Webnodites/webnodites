@@ -1,3 +1,7 @@
+<?php
+$con=mysqli_connect("localhost","root","","webnodites");
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -267,46 +271,65 @@
 </section>
 
 
-<footer >
+    <footer >
       <div class="site-footer" >
         <div class="container">
           <div class="row main-row">
-            <div class="col-lg-4 col-md-3 col-12">
-              <h2 class="footer-heading ">Quick Links</h2>
-              <ul class="list-unstyled ulc">
-                <li><a href="index.html" class="smoothscroll">Home</a></li>
-                <li><a href="who_we_are.html" class="smoothscroll">Who We Are</a></li>
-                <li><a href="services.html" class="smoothscroll">Services</a></li>
-                <li><a href="portfolio.html" class="smoothscroll">Portfolio</a></li>
-                <li><a href="blog.html" class="smoothscroll">Blogs</a></li>
-                <li><a href="contact.html" class="smoothscroll">Contact Us</a></li>
-              </ul>
+            <div class="col-lg-4 col-md-4 col-12">
+              <h2 class="footer-heading ">Recent Blogs</h2>
+              <ul class="list-unstyled ulc blg">
+                <?php
+                $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
+                $rs = mysqli_query($con,$qy);
+                foreach ($rs as $blg) {
+                ?>
+                <li>
+                  <a href="blogdetail.php?id=<?php echo $blg['id'];?>">
+                    <div class="row">
+                      <div class="col-3"><div class="img" style="background: url(images/blog/<?php echo $blg['img'];?>);
+                          background-size: contain;background-position: center;background-repeat: no-repeat;"></div>
+                      </div>
+                        <div class="col-9"><h3><?php echo $blg['title'];?></h3></div>
+                      </div>
+                    </a>
+                  </li>
+                  <?php
+
+                  }
+                 ?>
+                  
+                  
+                
             </div>
 
 
-            <div class="col-md-3 ml-auto col-12">
-              <h2 class="footer-heading ">Social Links</h2>
-              <ul class="list-unstyled ulc">
-                <li><a href="#" class="smoothscroll">Facebook</a></li>
-                <li><a href="#" class="smoothscroll">Instagram</a></li>
-                <li><a href="#" class="smoothscroll">LinkedIn</a></li>
-                <li><a href="#" class="smoothscroll">Twitter</a></li>
+            <div class="col-lg-3 col-md-3 ml-auto col-12">
+              <h2 class="footer-heading ">Connect With Us</h2>
+              <ul class="list-unstyled ulc social">
+                <li><a href="https://www.linkedin.com/in/webnodites/" class="smoothscroll">Linkedin</a></li>
+
+                <li><a href="https://www.facebook.com/Webnodites-110977740623699" class="smoothscroll">Facebook</a></li>
+
+                <li><a href="https://www.instagram.com/webnodites/" class="smoothscroll">Instagram</a></li>
+                
+                <li><a href="https://twitter.com/webnodites" class="smoothscroll">Twitter</a></li>
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-5 col-10">
+            <div class="col-lg-4 col-md-4 col-10">
               <div class="mb-5">
-                <h2 class="footer-heading1">Contact Us</h2>
+                <h2 class="footer-heading1">Contact Info</h2>
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="#"><img src="images/gmail.png">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/whatsapp.png">+91-8500792188</a>
+                      <a href="https://api.whatsapp.com/send?phone=+91-8500792188">
+                        <img src="images/whatsapp.png" alt="whatsapp">+91-8500792188</a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/call.png">+91-8500792188</a>
+                      <a href="tel:+918500792188"><img src="images/call.png" alt="phone">+91-8500792188</a>
                     </li>
                   </ul>
                 </div>
@@ -332,8 +355,8 @@
         <div class="container">
           <div class="col-md-12">
             <div class="border-top ">
-              <p class="copyright">Copyright &copy; 2020 | All Rights Reserved | Webnodites
-            </p>
+              <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Webnodites - All Rights Reserved 
+              </p>
         
             </div>
           </div>

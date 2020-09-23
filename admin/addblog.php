@@ -45,7 +45,7 @@ mysqli_close($con);
 <html>
 <head>
 	<title></title>
-	
+	<link rel="shortcut icon" href="../images/fav1.png">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
      <link href="https://cdn.quilljs.com/1.1.6/quill.snow.css" rel="stylesheet">

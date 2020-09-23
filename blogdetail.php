@@ -260,13 +260,13 @@ date_default_timezone_set('Asia/Kolkata');
             <div class="col-lg-3 col-md-3 ml-auto col-12">
               <h2 class="footer-heading ">Connect With Us</h2>
               <ul class="list-unstyled ulc social">
-                <li><a href="https://www.linkedin.com/in/webnodites/" class="smoothscroll"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="https://www.linkedin.com/in/webnodites/" class="smoothscroll">Linkedin</a></li>
 
-                <li><a href="https://www.facebook.com/Webnodites-110977740623699" class="smoothscroll"><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href="https://www.facebook.com/Webnodites-110977740623699" class="smoothscroll">Facebook</a></li>
 
-                <li><a href="https://www.instagram.com/webnodites/" class="smoothscroll"><i class="fa fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://www.instagram.com/webnodites/" class="smoothscroll">Instagram</a></li>
                 
-                <li><a href="https://twitter.com/webnodites" class="smoothscroll"><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://twitter.com/webnodites" class="smoothscroll">Twitter</a></li>
               </ul>
             </div>
 
@@ -309,8 +309,8 @@ date_default_timezone_set('Asia/Kolkata');
         <div class="container">
           <div class="col-md-12">
             <div class="border-top ">
-              <p class="copyright">Copyright &copy; 2020 | All Rights Reserved | Webnodites
-            </p>
+              <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Webnodites - All Rights Reserved 
+              </p>
         
             </div>
           </div>

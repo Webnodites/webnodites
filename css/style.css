@@ -354,6 +354,9 @@ body:after {
     text-align: center;
     line-height: normal;
 }
+ .site-footer .blg h3{
+    font-size: 14px;
+     }
 }
 
 .bg-text-line {
@@ -2374,6 +2377,9 @@ figure figcaption {
    }
 }
 @media (max-width: 767px) {
+   .site-footer .footer-heading {
+    font-size: 18px;
+  }
   .mission-title {
     font-size: 20px;
     padding-right: 0;
