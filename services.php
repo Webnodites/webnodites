@@ -163,7 +163,7 @@ session_start();
             <div class="row">
               <div class="col-12">
                 <div class="boxside">
-                  <h2>Saas Applications</h2>
+                  <h2>SAAS Applications</h2>
                   <p>Try a crafted optimized for conversion website that will perform 
                     perfectly on every device.
                     </p>
