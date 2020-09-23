@@ -1,3 +1,7 @@
+<?php
+session_start();
+$sname = $_GET['sub'];
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -380,11 +384,11 @@
                 </div>
 
                 <div class="form-group">
-                  <input type="text" name="subject" class="cntinput  require form_field only-alpha" placeholder="Subject" required>
+                  <input type="text" value="<?php echo $sname; ?>" name="subject" class="cntinput  require form_field only-alpha" placeholder="Subject" readonly required >
                 </div>
 
                 <div class="form-group">
-                  <textarea name="msg"  placeholder="Text" class="Textarea  require form_field" required></textarea>
+                  <textarea name="msg" placeholder="Text" class="Textarea require form_field" required></textarea>
                 </div>
 
               <div class="form-group">

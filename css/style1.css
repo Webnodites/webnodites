@@ -21,13 +21,15 @@
   }
 }
  @media (max-width: 991.98px) {
-        .owl-style .owl-nav .owl-prev {
+      .cat-slider  .owl-style .owl-nav .owl-prev {
          left: -15px;
         }
-        .owl-style .owl-nav .owl-next {
+      .cat-slider  .owl-style .owl-nav .owl-next {
           right: -15px; 
         }
+    
   }
+ 
 
 .all h1{
     font-size: 70px;
@@ -202,11 +204,11 @@ padding: 0px 40px;
     padding: 0px 0px;
     min-height: 325px;
 }
-  .owl-style .owl-nav .owl-prev {
+ .cat-slider .owl-style .owl-nav .owl-prev {
     left: -5px;
     margin-top:-40px;
 }
-.owl-style .owl-nav .owl-next {
+.cat-slider.owl-style .owl-nav .owl-next {
     right: -5px;
     margin-top:-40px;
 }
@@ -238,7 +240,11 @@ padding: 0px 40px;
     min-height: 255px;
 }
 }
-
+  @media (max-width: 991.98px) and (min-width: 767px ) {
+        .Rectangle img, .Rectangle1 img {
+          height: 200px;
+      }
+   }
 
 /*end portfolio page style */
 
@@ -542,6 +548,12 @@ font-size: 30px;
 }
 /*small mobiles*/
 @media(max-width: 400px){
+.blg_section {
+  padding: 0;
+}
+.author h3 {
+  font-size: 16px;
+}
 
 }
 
@@ -965,8 +977,8 @@ background-size: cover;
   }
 
   .third_section .contain .main_contain{
-    padding-top: 20px;
-    padding-left: 10px;
+    padding-top: 5px;
+        padding-left: 10px;
     padding-right: 10px;
     margin-top: 20px;
     background-color: #f0f0f0;
@@ -1186,6 +1198,9 @@ height: 230px;
     color: #000c2d;
     font-weight: 900;
 }
+.textcat-head {
+    font-size: 25px;
+    }
   
 }
 
