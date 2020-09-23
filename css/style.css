@@ -830,7 +830,7 @@ body:after {
             font-size: 18px;
           }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt:hover{
-            color: #7c7b79;;
+            color: #fff;
 
          }
      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > .cnt.active {
@@ -2598,5 +2598,12 @@ padding: 0px 40px;
   .simg {
       padding: 30px 10px;
       min-height: 255px;
+          margin: 0;
   }
+  #gallery-section .hd{
+  padding: 0;
+}
+#gallery-section .hd h3{
+ font-size: 24px;
+}
 }

@@ -2,7 +2,7 @@
 <?php
 $connect=mysqli_connect("localhost","root","","webnodites");
 
-$limit = '3';
+$limit = '4';
 $page = 1;
 
 if($_POST['page'] > 1)
