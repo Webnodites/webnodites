@@ -374,10 +374,10 @@ session_start();
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">
-                        <img src="images/whatsapp.png" alt="whatsapp">+91-8500792188</a>
+                        <img src="images/whatsapp.png" alt="whatsapp">+91 850 079 2188</a>
                     </li>
                     <li>
-                      <a href="tel:+918500792188"><img src="images/call.png" alt="phone">+91-8500792188</a>
+                      <a href="tel:+918500792188"><img src="images/call.png" alt="phone">+91 850 079 2188</a>
                     </li>
                   </ul>
                 </div>
