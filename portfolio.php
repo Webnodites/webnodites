@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect("localhost","root","","webnodites");
-session_start();
+include('connect.php');
+
 ?>
 
 <!doctype html>
@@ -118,24 +118,26 @@ session_start();
       
         <div class="row">
           
-            <div class="col-12 col-md-6 gal-item d-block simg"  >
-              <div style="background: url(images/recent_work/tes.jpg);background-repeat: no-repeat;background-size: contain;" class="ssubimg"></div>
-              <a href="https://www.tesventures.in/" target="_blank" class="visit-btn1">Visit</a>
+          <!--   <div class="col-12 col-md-6 gal-item d-block simg"  >
+              <div style="background: url(images/portfolio/education/brain_masters.jpg);background-repeat: no-repeat;background-size: contain;" class="ssubimg"></div>
+              <a href="https://webnodites.github.io/education1/" target="_blank" class="visit-btn1">Visit</a>
             </div>
 
             <div class="col-12 col-md-6 gal-item d-block simg">
-              <div style="background: url(images/recent_work/rvs.jpg);background-repeat: no-repeat;background-size: contain;" class="ssubimg"></div>
-             <a href="https://ranavikramsingh.com/" target="_blank" class="visit-btn1">Visit</a>
-           </div>
+              <div style="background: url(images/portfolio/personal_portfolio/alex_martin.jpg);background-repeat: no-repeat;background-size: contain;" class="ssubimg"></div>
+             <a href="https://webnodites.github.io/portfolio1/" target="_blank" class="visit-btn1">Visit</a>
+           </div> -->
           
-            <div class="col-12 col-md-6 gal-item d-block simg" >
-              <div style="background: url(images/recent_work/a1.jpg);background-repeat: no-repeat;background-size: contain;" class="ssubimg"></div>
+           <div class="col-12 col-md-6 gal-item d-block simg" >
+              <div style="background: url(images/recent_work/a1.jpg);background-repeat: no-repeat;background-size: cover;    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="ssubimg"></div>
              <a href="https://www.a1photography.in/" target="_blank" class="visit-btn1">Visit</a>
            </div>
 
+           
+
             <div class="col-12 col-md-6 gal-item d-block simg"  >
-              <div style="background: url(images/recent_work/educatonist.jpg);background-repeat: no-repeat;background-size: contain;" class="ssubimg"></div>
-             <a href="https://www.theeducationist.in/" target="_blank" class="visit-btn1">Visit</a>
+              <div style="background: url(images/recent_work/dm.png);background-repeat: no-repeat;background-size: cover;    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="ssubimg"></div>
+             <a href="https://dynamicsmonk.com/" target="_blank" class="visit-btn1">Visit</a>
            </div>
           
            
@@ -680,7 +682,7 @@ session_start();
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.in"><img src="images/gmail.png" alt="gmail">contact@webnodites.in</a>
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">

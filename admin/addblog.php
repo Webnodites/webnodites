@@ -1,8 +1,7 @@
 <?php
 
-session_start();
-$con=mysqli_connect("localhost","root","","webnodites");
-
+include('connect.php');
+date_default_timezone_set('Asia/Kolkata');
    
 if(!isset($_SESSION['username']))
 {
@@ -17,21 +16,38 @@ $b= $_POST["user"];
 $c= $_POST["date"];
 $d= $_POST["shortdesc"];
 $u= $_POST["userdesc"];
+$ul= $_POST["userlink"];
 $ct= $_POST["category"];
 $e= $_POST["editor_content"];
 $file= $_FILES["image"]["name"];
 $uimg= $_FILES["userimage"]["name"];
+$mi1= $_FILES["blgimg1"]["name"];
+$mi2= $_FILES["blgimg2"]["name"];
+$mi3= $_FILES["blgimg3"]["name"];
+$mi4= $_FILES["blgimg4"]["name"];
 
-$z= "INSERT INTO `blog`(`title`,`user`,`userdes`,`category`,`userimg`, `date`, `shortdes`, `longdes`         ,`img`,`status`) VALUES('$a','$b','$u','$ct','$uimg','$c','$d', '$e','$file','Active')";
+
+$z= "INSERT INTO `blog`(`title`,`user`,`userdes`,`category`,`userimg`,`user_link`, `date`, `shortdes`, `longdes`,`img`,`status`) VALUES('$a','$b','$u','$ct','$uimg','$ul','$c','$d', '$e','$file','Active')";
 
 $res = mysqli_query($con,$z);
 if($res)
 {
-$a5=move_uploaded_file($_FILES["image"]["tmp_name"],"../Images/blog/".$_FILES["image"]["name"]);
-$a6=move_uploaded_file($_FILES["userimage"]["tmp_name"],"../Images/bloguser/".$_FILES["userimage"]["name"]);
+$a5=move_uploaded_file($_FILES["image"]["tmp_name"],"../images/blog/".$_FILES["image"]["name"]);
+$a6=move_uploaded_file($_FILES["userimage"]["tmp_name"],"../images/bloguser/".$_FILES["userimage"]["name"]);
+
+$m1=move_uploaded_file($_FILES["blgimg1"]["tmp_name"],"../images/blog/".$_FILES["blgimg1"]["name"]);
+$m2=move_uploaded_file($_FILES["blgimg2"]["tmp_name"],"../images/blog/".$_FILES["blgimg2"]["name"]);
+$m3=move_uploaded_file($_FILES["blgimg3"]["tmp_name"],"../images/blog/".$_FILES["blgimg3"]["name"]);
+$m4=move_uploaded_file($_FILES["blgimg4"]["tmp_name"],"../images/blog/".$_FILES["blgimg4"]["name"]);
+
 
 echo "<script>
       alert('Blog Post Successfully')
+      </script>";
+}
+else{
+  echo "<script>
+      alert('error')
       </script>";
 }
 mysqli_close($con);
@@ -94,21 +110,16 @@ mysqli_close($con);
       <div class="form-group row">
         <label for="category" class="col-sm-2 col-form-label">Category</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" name="category" autocomplete="off" required>
+          <input type="text" class="form-control" name="category" autocomplete="off" >
         </div>
       </div>
         
-      <div class="form-group row">
-    		<label for="user" class="col-sm-2 col-form-label">Author</label>
-    		<div class="col-sm-10">
-          <input type="text" class="form-control" name="user" autocomplete="off" required>
-  		  </div>
-      </div>
+      
 
   		<div class="form-group row">
     		<label for="date" class="col-sm-2 col-form-label">Date</label>
     		<div class="col-sm-10">
-          <input type="text" class="form-control" name="date" value="<?php echo date('Y-m-d')." "; echo date("h:i:sa"); ?>" readonly>
+          <input type="text" class="form-control" name="date" value="<?php echo date('d-m-Y')." "; echo date("h:i:sa"); ?>" readonly>
   		  </div>
       </div>  
 
@@ -122,21 +133,37 @@ mysqli_close($con);
       <div class="form-group row">
         <label for="pic" class="col-sm-2 col-form-label">Blog Image</label>
          <div class="col-sm-10">
-            <input type="file" class="form-control-file" id="image" name="image">
+            <input type="file" class="form-control-file" id="image" name="image" onchange="readURL1(this);">
+             <img src="#" id="blah1" alt="Selected Image Here.." style="height: 100px; width: 100px;">
         </div>
      </div>
 
      <div class="form-group row">
+        <label for="user" class="col-sm-2 col-form-label">Author Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="user" autocomplete="off" >
+        </div>
+      </div>
+
+     <div class="form-group row">
         <label for="userpic" class="col-sm-2 col-form-label">Author Image</label>
          <div class="col-sm-10">
-            <input type="file" class="form-control-file" id="userimage" name="userimage">
+            <input type="file" class="form-control-file" id="userimage" name="userimage" onchange="readURL2(this);">
+            <img src="#" id="blah2" alt="Selected Image Here.." style="height: 100px; width: 100px;">
+        </div>
+     </div>
+
+     <div class="form-group row">
+        <label for="userlink" class="col-sm-2 col-form-label">Author Link</label>
+         <div class="col-sm-10">
+            <input type="text" class="form-control" id="userlink" name="userlink">
         </div>
      </div>
 
       <div class="form-group row">
         <label for="userdesc" class="col-sm-2 col-form-label">Author Description</label>
          <div class="col-sm-10">
-        <textarea class="form-control" id="shortdesc" name="userdesc" rows="3" ></textarea>
+        <textarea class="form-control" id="suthordesc" name="userdesc" rows="3" ></textarea>
         </div>
       </div>  
 
@@ -148,6 +175,25 @@ mysqli_close($con);
           
           </div>
       </div>
+
+       <div class="form-group row">
+        <label for="pic" class="col-sm-12 col-form-label">More Images</label>
+        <div class="row">
+          <div class="col-sm-3">
+              <input type="file" class="form-control-file" id="blgimg1" name="blgimg1">
+          </div>
+          <div class="col-sm-3">
+              <input type="file" class="form-control-file" id="blgimg2" name="blgimg2">
+          </div>
+          <div class="col-sm-3">
+              <input type="file" class="form-control-file" id="blgimg3" name="blgimg3">
+          </div>
+          <div class="col-sm-3">
+              <input type="file" class="form-control-file" id="blgimg4" name="blgimg4">
+          </div>
+        </div>
+        
+        </div>
 
 	   <div class="form-group row text-center" style="display: block;">
 
@@ -165,6 +211,32 @@ mysqli_close($con);
     CKEDITOR.replace('editor');
 
   });
+</script>
+<script type="text/javascript">
+    function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah1')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+      function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah2')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>
 </body>
 </html>

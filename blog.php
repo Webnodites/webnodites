@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect("localhost","root","","webnodites");
-session_start();
+include('connect.php');
+
 
 
 ?>
@@ -119,7 +119,7 @@ session_start();
             <div class="blog_slider_1">
                 <div class="owl-carousel owl-style owl-carousel-blog no-owl-nav">
                     <?php
-                       $q = "select * from blog Limit 5";
+                       $q = "select * from blog where status = 'Active' ORDER BY id DESC Limit 5";
                        $res = mysqli_query($con, $q);
                        foreach ($res as $blog) {
                                      
@@ -165,7 +165,7 @@ session_start();
               <h2 class="footer-heading ">Recent Blogs</h2>
               <ul class="list-unstyled ulc blg">
                 <?php
-                $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
+                $qy = "SELECT * FROM `blog` where status = 'Active' ORDER BY id DESC LIMIT 3";
                 $rs = mysqli_query($con,$qy);
                 foreach ($rs as $blg) {
                 ?>
@@ -208,7 +208,7 @@ session_start();
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.in"><img src="images/gmail.png" alt="gmail">contact@webnodites.in</a>
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">

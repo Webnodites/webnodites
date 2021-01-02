@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect("localhost","root","","webnodites");
-session_start();
+include('connect.php');
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -417,7 +417,7 @@ session_start();
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.in"><img src="images/gmail.png" alt="gmail">contact@webnodites.in</a>
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">

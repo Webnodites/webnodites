@@ -65,7 +65,7 @@ $res = mysqli_query($con,$data);
         <h4><?php echo $blog['date']?></h4>
       </div>
       <div class="col-lg-9 col-sm-12 col-md-9">
-        <img src="../Images/blog/<?php echo $blog['img']?>">
+        <img src="../images/blog/<?php echo $blog['img']?>">
         <?php echo $blog['longdes']?>
 
       </div>

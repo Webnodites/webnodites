@@ -1,1 +1,0 @@
-Designed and Developed By <a href="https://www.webnodites.com">Webnodites</a>

@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect("localhost","root","","webnodites");
-session_start();
+include('connect.php');
+
 $sname = $_GET['sub'];
 ?>
 <!doctype html>
@@ -117,7 +117,7 @@ $sname = $_GET['sub'];
             <div>
               <div class="cntbox">
                 <h2 class="cnthead">Email</h2>
-                <a class="cnttext" href="mailto:contact@webnodites.com" target="_blank">contact@webnodites.com</a>
+                <a class="cnttext" href="mailto:contact@webnodites.in" target="_blank">contact@webnodites.in</a>
               </div>
 
               <div class="cntbox">
@@ -455,7 +455,7 @@ $sname = $_GET['sub'];
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.in"><img src="images/gmail.png" alt="gmail">contact@webnodites.in</a>
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">

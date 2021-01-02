@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect("localhost","root","","webnodites");
-session_start();
+include('connect.php');
+
 $bid = $_GET['id'];
 date_default_timezone_set('Asia/Kolkata');
 ?>
@@ -13,6 +13,9 @@ date_default_timezone_set('Asia/Kolkata');
     <meta name="description" content="Webnodites mission is to provide you the best services like web design and development (which are user friendly, fully responsive, optimized), search engine optimization (SEO), Digital Marketing, Email Marketing, Content Marketing, Graphic Design. And many other dynamic features for websites which helps to increase traffic. Easy, Fast, Customisable & 24/7 hrs Support.">
     <meta name="keywords" content="webnodites, webnodite, web developer, graphic design, website creator,  best web developer, best web solution, web design, best web solutions, best website maker, best website maker in jaipur, best website maker in India, best web developer in jaipur, best web developer in bhilwara, best website for ecommerce, best website for small business, top 10 web developers, web developers, web developers in jaipur, web developer in bhilwara, best website for a wedding, digital marketing, ecommerce website, website builder,website design services, responsive web design, web development company, software development company, website development company, website creator, website templates, how to make a website">
 
+
+ <meta property="fb:app_id" content="663774370909599" />
+     <meta property="fb:admins" content="100021791163725"/>
 
     <link rel="shortcut icon" href="images/fav1.png">
     
@@ -36,10 +39,13 @@ date_default_timezone_set('Asia/Kolkata');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
-    
+
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
-  
+ 
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=663774370909599&autoLogAppEvents=1" nonce="LCqT8P11"></script>
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -122,8 +128,6 @@ date_default_timezone_set('Asia/Kolkata');
         <div class="row">
           <div class="col-md-8 blog-content">
 
-            
-
             <div class="row mb-5">
               <div class="col-lg-12">
                 <img src="images/blog/<?php echo $blog['img'];?>" alt="Blog Image" class="img-fluid">
@@ -138,17 +142,15 @@ date_default_timezone_set('Asia/Kolkata');
             
 
             <?php echo $blog['longdes'];?>
+
+            <div class="fb-like" data-href="http://localhost/webnodites/blogdetail?id=<?php echo $blog['id'];?>" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
             
-
-
-            <div class="pt-5">
+            <div class="fb-comments" data-href="http://localhost/webnodites/blogdetail?id=<?php echo $blog['id'];?>" data-width="100%" data-numposts="5"></div>
+           
+           <!--  <div class="pt-5">
               <h3 class="mb-5">All Comments</h3>
               <ul class="comment-list" id="comments">
-                 
-                 
-                  
               </ul>
-               <!-- END comment-list -->
               
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">Leave a comment</h3>
@@ -176,7 +178,7 @@ date_default_timezone_set('Asia/Kolkata');
 
                 </form>
               </div>
-            </div>
+            </div> -->
 
           </div>
           <div class="col-md-4 sidebar">
@@ -190,8 +192,8 @@ date_default_timezone_set('Asia/Kolkata');
                   <img src="images/bloguser/<?php echo $blog['userimg'];?>" alt="Athor Image" class="img-fluid mb-4">
 
                 </div>
-                <div class="col-8">
-                   <h3><?php echo $blog['user'];?></h3>
+                <div class="col-8" style="padding-left: 0;">
+                   <a href="<?php echo $blog['user_link'];?>" target="_blank"><h3><?php echo $blog['user'];?></h3></a>
                 </div>
               </div>
               <p><?php echo $blog['userdes'];?></p>
@@ -202,7 +204,7 @@ date_default_timezone_set('Asia/Kolkata');
                 <h4>Recent Blogs</h4>  
              </div>
              <?php
-                $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
+                $qy = "SELECT * FROM `blog` where status = 'Active' ORDER BY id DESC LIMIT 3";
                 $rs = mysqli_query($con,$qy);
                 foreach ($rs as $blg) {
                 ?>
@@ -211,8 +213,8 @@ date_default_timezone_set('Asia/Kolkata');
                   <img src="images/blog/<?php echo $blg['img'];?>" alt="blog" class="img-fluid mb-4">
                   <h3><?php echo $blg['title'];?></h3>
                   </a>
-                  <p><i class="fa fa-calendar"></i> <?php echo $blog['date'];?></p>
-                  <p><i class="fa fa-user"></i> <?php echo $blog['user'];?></p>
+                  <p><i class="fa fa-calendar"></i> <?php echo $blg['date'];?></p>
+                  <p><i class="fa fa-user"></i> <?php echo $blg['user'];?></p>
                 </div>
                <?php
 
@@ -233,7 +235,7 @@ date_default_timezone_set('Asia/Kolkata');
               <h2 class="footer-heading ">Recent Blogs</h2>
               <ul class="list-unstyled ulc blg">
                 <?php
-                $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
+                $qy = "SELECT * FROM `blog` where status = 'Active' ORDER BY id DESC LIMIT 3";
                 $rs = mysqli_query($con,$qy);
                 foreach ($rs as $blg) {
                 ?>
@@ -276,7 +278,7 @@ date_default_timezone_set('Asia/Kolkata');
                 <div>
                   <ul class="list-unstyled sc">
                     <li>
-                      <a href="mailto:contact@webnodites.com"><img src="images/gmail.png" alt="gmail">contact@webnodites.com</a>
+                      <a href="mailto:contact@webnodites.in"><img src="images/gmail.png" alt="gmail">contact@webnodites.in</a>
                     </li>
                     <li>
                       <a href="https://api.whatsapp.com/send?phone=+91-8500792188">

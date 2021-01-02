@@ -1,6 +1,8 @@
 <?php
 
 include('connect.php');
+date_default_timezone_set('Asia/Kolkata');
+
 $data = "select * from blog";
 $res = mysqli_query($con,$data);
 ?>
@@ -73,16 +75,16 @@ $res = mysqli_query($con,$data);
           <td scope="row"><?php echo $index;?></td>
           <td><a href="blogdetail.php?blogid=<?php echo $blog['id'];?>"><?php echo $blog['title'];?></a></td>
           <td><?php echo $blog['category'];?></td>
-          <td><img src="../Images/blog/<?php echo $blog['img'];?>"></td>
+          <td><img src="../images/blog/<?php echo $blog['img'];?>"></td>
           <td>On <?php echo $blog['date'];?> </td>
           <?php
              if($blog['status'] == 'Active')
              {
-                echo "<td><a href='editblog.php?blogid=".$blog['id']."'><i class='fa fa-pencil-square-o'></i></a> <a href='control.php?nm=deactivate&blogid=".$blog['id']."'>Deactivate</a></td>";
+                echo "<td><a href='editblog.php?blogid=".$blog['id']."'><i class='fa fa-pencil-square-o'></i></a> <a href='control.php?nm=deactivate&blogid=".$blog['id']."'>Deactivate</a> <td><a href='deleteblog.php?blogid=".$blog['id']."'><i class='fa fa-trash'></i></a></td>";
               }
               else
               {
-                 echo "<td><a href='editblog.php?blogid=".$blog['id']."'><i class='fa fa-pencil-square-o'></i></a> <a href='control.php?nm=activate&blogid=".$blog['id']."'>Activate</a></td>";
+                 echo "<td><a href='editblog.php?blogid=".$blog['id']."'><i class='fa fa-pencil-square-o'></i></a> <a href='control.php?nm=activate&blogid=".$blog['id']."'>Activate</a><td><a href='deleteblog.php?blogid=".$blog['id']."'><i class='fa fa-trash'></i></a></td>";
               }
           ?>
         </tr>

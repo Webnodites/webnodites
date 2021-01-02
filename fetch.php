@@ -1,6 +1,7 @@
 
 <?php
-$connect=mysqli_connect("localhost","root","","webnodites");
+include('connect.php');
+
 
 $limit = '4';
 $page = 1;
@@ -16,25 +17,20 @@ else
 }
 
 $query = "
-SELECT * FROM blog 
+SELECT * FROM blog where status = 'Active'
 ";
 
-if($_POST['query'] != '')
-{
-  $query .= '
-  WHERE title LIKE "%'.str_replace(' ', '%', $_POST['query']).'%" or category LIKE "%'.str_replace(' ', '%', $_POST['query']).'%"
-  ';
-}
+
 
 $query .= 'ORDER BY id DESC ';
 
 $filter_query = $query . 'LIMIT '.$start.', '.$limit.'';
 
-$res = mysqli_query($connect,$query);
+$res = mysqli_query($con,$query);
 
 $total_data = mysqli_num_rows($res);
 
-$res = mysqli_query($connect,$filter_query);
+$res = mysqli_query($con,$filter_query);
 
 $total_filter_data =mysqli_num_rows($res);
 
