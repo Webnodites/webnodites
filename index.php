@@ -245,20 +245,40 @@ include('connect.php');
           <div class="owl-carousel owl-style owl-carousel-one no-owl-nav">
             
             <div>
-              <div class="block-testimony-1 ">
+                           <div class="block-testimony-1 ">
                 <div class="f">
                   <figure>
-                  <a href="https://www.linkedin.com/in/ranavikramsingh7/" target="_blank"><img src="images/testimonial/ranavikr.jpg" alt="testimony1" class="img-fluid" ></a>
+                  <a href="https://www.linkedin.com/in/shweta48singh/" target="_blank"><img src="images/testimonial/shweta.png" alt="testimony1" class="img-fluid" ></a>
                   </figure>
 
                   <div>
-                    <h4>Rana Vikram Singh</h4>
-                    <h3>Executive Coach | Corporate Mentor | The Educationist | Career Advisor</h3>
+                    <h4>Shweta Singh </h4>
+                    <h3>PARLONS - A Content Marketing Agency.</h3>
                   </div>
                 </div>
                 
                 <div class="l">
-                  <p>&ldquo;Credible professional support and care. The real business partners&rdquo;</p>
+                  <p>&ldquo;Webnodites -The ultimate destination for a seamless website. The team has all the solutions and suggestions to fix the website. 
+                            They have exceptional knowledge and expertise to offer the best in the industry.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="block-testimony-1 ">
+                <div class="f">
+                  <figure>
+                    <a href="https://www.facebook.com/sajjan.nathyogi.3" target="_blank"> <img src="images/testimonial/sajan.png" alt="testimony2" class="img-fluid"></a>
+                  </figure>
+
+                  <div>
+                    <h4>Sajjan Nath </h4>
+                    <h3>Founder at A1Photography</h3>
+                  </div>
+                </div>
+                
+                <div class="l">
+                  <p>&ldquo;Easy access and awesome to use this website to start my business. They've done a great job of creating exactly what I wanted. Easy to work with and very responsive. &rdquo;</p>
                 </div>
               </div>
             </div>
@@ -267,22 +287,22 @@ include('connect.php');
               <div class="block-testimony-1 ">
                 <div class="f">
                   <figure>
-                    <a href="https://www.linkedin.com/in/simrankaurrana12/" target="_blank"> <img src="images/testimonial/simran.jpg" alt="testimony2" class="img-fluid"></a>
+                    <a href="https://www.linkedin.com/in/dynamicsmonk" target="_blank"> <img src="images/testimonial/hg.jpg" alt="testimony2" class="img-fluid"></a>
                   </figure>
 
                   <div>
-                    <h4>Simran Kaur </h4>
-                    <h3>Chairperson & MD at The Educationist Supergroup</h3>
+                    <h4>Himanshu Garg </h4>
+                    <h3>CTO at Dynamics Monk</h3>
                   </div>
                 </div>
                 
                 <div class="l">
-                  <p>&ldquo;Easy access and awesome to use this website to start my small business.&rdquo;</p>
+                  <p>&ldquo;The webnodites growth trajectory is quite fascinating. The passion they display in getting the job done is unparalleled. We at DynamicsMonk feel proud in associating with webnodites. ROI they bring to the table with the support service is amazing.&rdquo;</p>
                 </div>
               </div>
             </div>
 
-            <div>
+            <!--<div>
               <div class="block-testimony-1 ">
                 <div class="f">
                   <figure>
@@ -299,7 +319,7 @@ include('connect.php');
                   <p>&ldquo;Great site with great &amp; amazing features. Well done.&rdquo;</p>
                 </div>
               </div>
-            </div>
+            </div>-->
 
 
 
@@ -325,7 +345,7 @@ include('connect.php');
               <h2 class="footer-heading ">Recent Blogs</h2>
               <ul class="list-unstyled ulc blg">
                 <?php
-                $qy = "SELECT * FROM `blog` ORDER BY id DESC LIMIT 3";
+                $qy = "SELECT * FROM `blog` where status = 'Active' ORDER BY id DESC LIMIT 3";
                 $rs = mysqli_query($con,$qy);
                 foreach ($rs as $blg) {
                 ?>
